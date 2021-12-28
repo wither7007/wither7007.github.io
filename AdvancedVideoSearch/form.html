@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        text-align: center;
+        /* margin-top: 10rem; */
+        padding: 10rem;
+        background-color: #01ffff;
+    }
+
+    input {
+        border-radius: 5px;
+        height: 2rem;
+        margin-left: 1rem;
+    }
+
+    input:focus {
+        outline: none !important;
+        border-color: #719ECE;
+        box-shadow: 0 0 10px #719ECE;
+    }
+
+    textarea:focus {
+        outline: none !important;
+        border-color: #719ECE;
+        box-shadow: 0 0 10px #719ECE;
+    }
+
+    form {
+        border: solid 1px salmon;
+        border-radius: 10px;
+        padding: 30px;
+    }
+</style>
+
+<body>
+    <form id="form">
+        <label>Test field:   <input id="submit" type="text"></label>
+        <br><br>
+        <button  type="submit">Submit form</button>
+    </form>
+    <p id="log"></p>
+    <script>
+        window.onload = function () {
+            document.getElementById("submit").focus();
+        }
+        function changeSubmit(event) {
+            alert(document.getElementById('submit').value)
+            event.preventDefault()
+        }
+        document.getElementById('form').addEventListener('submit', changeSubmit)
+    </script>
+</body>
+
+</html>
