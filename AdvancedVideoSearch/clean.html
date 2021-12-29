@@ -1,0 +1,20 @@
+document.getElementById('mainItem').innerHTML +=
+` <div class="col">
+    <div class="p-3 border bg-light">Row column</div>
+    Video id is : {a.id.videoId}
+    <hr> {a.snippet.description}<br>
+    {a.snippet.publishedAt}
+    <br>Duration is {duration} <br> <a href="https://www.youtube.com/watch?v={a.id.videoId}" target="_blank">video</a>
+
+</div> `
+
+document.getElementById('mainItem').innerHTML +=
+`<div class="col">
+    <div class="p-3 border bg-light">
+        Video id is : ${a.id.videoId}
+        <hr> ${a.snippet.description}<br>
+        ${a.snippet.publishedAt}
+        <br>Duration is ${duration} <br> <a href="https://www.youtube.com/watch?v={a.id.videoId}"
+            target="_blank">video</a>
+    </div>
+</div> `
