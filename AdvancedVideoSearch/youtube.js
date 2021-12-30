@@ -1,15 +1,31 @@
 localStore = []
+allItems = []
 // const notes = JSON.parse(localStorage.getItem('notes'))
 document.addEventListener('click', function (e) {
     e = e || window.event;
-    var target = e.target || e.srcElement,
-        text = target.textContent || target.innerText;
-    id = target.dataset.id
-    desc = target.dataset.desc
-    duration = target.dataset.duration
-    console.log(id)
-    localStore.push(id)
-    localStorage.setItem('notes', text)
+    var target = e.target
+    text = target.textContent || target.innerText;
+    if (target.getAttribute("data-id")) {
+        console.log("yes")
+        id = target.dataset.id
+        desc = target.dataset.desc
+        duration = target.dataset.duration
+        console.log(id)
+        item = [
+            {
+                "id": id,
+                "desc": desc,
+                "duration": duration
+            }
+        ]
+        allItems.push(item)
+        localStore.push(id)
+        localStorage.setItem('notes', text)
+        // data attribute doesn't exist or is empty
+    }
+    else {
+        console.log("no")
+    }
 
 }, false);
 window.onload = function () {
@@ -28,7 +44,7 @@ function sumClick(event) {
     event.preventDefault()
 
     // alert(sub)
-    url = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyC4Yhlk-ADYBzSyiqD0QEgrvjB3plD4jao&part=snippet&q=${sub}&maxResults=5&publishedAfter=2021-12-21T02:49:05.100Z&publishedBefore=2021-12-21T02:49:05.100Z&order=relevance&videoDuration=long&type=video`
+    url = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyC4Yhlk-ADYBzSyiqD0QEgrvjB3plD4jao&part=snippet&q=${sub}&maxResults=10&publishedAfter=2021-12-21T02:49:05.100Z&publishedBefore=2021-12-21T02:49:05.100Z&order=relevance&videoDuration=long&type=video`
     console.log(url)
     // document.getElementById('test').innerHTML = url
     getYouTube(url)
@@ -38,9 +54,10 @@ dur = "https://www.googleapis.com/youtube/v3/videos?id=k8JD1A9uVaM&part=contentD
 xy = {}
 xd = {}
 duration = ""
-// url = "https://www.googleapis.com/youtube/v3/search?key=AIzaSyC4Yhlk-ADYBzSyiqD0QEgrvjB3plD4jao&part=snippet&q=axiosjavascript&maxResults=5&publishedAfter=2021-12-21T02:49:05.100Z&publishedBefore=2021-12-21T02:49:05.100Z&order=relevance&videoDuration=long&type=video"
+// localStorage.setItem('notes', JSON.stringify(allItems))
+// const todos = JSON.parse(localStorage.getItem('notes'))
+// localStorage.clear()
 function getYouTube(url) {
-    // document.getElementById('mainItem').innerHTML = 'The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun.'
     axios.get(url)
         .then(function (response) {
             // handle success
@@ -62,7 +79,7 @@ function getYouTube(url) {
                     duration = xd.items[0].contentDetails.duration
                     document.getElementById('mainItem').innerHTML +=
                         `<div class="col">
-                <div class="p-3 border bg-light" data-id=${a.id.videoId} data-desc=${a.snippet.description} data-duration=${duration}>
+                <div class="p-3 border bg-light" data-id=${a.id.videoId} data-desc="${a.snippet.description}" data-duration=${duration}>
                     https://www.youtube.com/watch?v=${a.id.videoId}<br>
                     Video id is : ${a.id.videoId}
                     <hr> ${a.snippet.description}<br>

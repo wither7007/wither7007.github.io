@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="shortcut icon" href='#' />
     <title>Grid</title>
 </head>
 <style>
@@ -26,14 +27,21 @@
         <div class="row row-cols-1 row-cols-lg-3 g-5 g-lg-3">
 
             <div class="col">
-                <div class="p-3 border rounded-3 bg-light">in the chest of the out of tune No peito dos desafinados Also
+                <div class="p-3 border rounded-3 bg-light" data-id="xxxxxxxx"
+                    data-desc="The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun.">
+                    in the chest of the out of tune No peito
+                    dos desafinados Also
                     beats a heart Tambem bate um coracao</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded-3 bg-light">row 2</div>
+                <div class="p-3 border rounded-3 bg-light" data-id="yyyy"
+                    data-desc="The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun.">
+                    row 2</div>
             </div>
             <div class="col">
-                <div class="p-3 border rounded-3 bg-light">row 3</div>
+                <div class="p-3 border rounded-3 bg-light" data-id="xxxxxxxx"
+                    data-desc="The thing that hath been, it is that which shall be; and that which is done is that which shall be done: and there is no new thing under the sun.">
+                    row 3</div>
             </div>
             <div class="col">
                 <div class="p-3 border rounded-3 bg-light">row 4</div>
@@ -52,18 +60,37 @@
             </div>
         </div>
         <article id="electric-cars" data-columns="3" data-index-number="12314" data-parent="cars">
+            data-id=
             This is article
         </article>
     </div>
     <script>
-        localStore = []
+        id = ''
+        desc = ''
+        mlocalStore = []
+        var obj = {};
+        allItems = []
         // const notes = JSON.parse(localStorage.getItem('notes'))
         document.addEventListener('click', function (e) {
             e = e || window.event;
             var target = e.target || e.srcElement,
                 text = target.textContent || target.innerText;
-            console.log(text)
-            localStore.push(text)
+            // console.log(text)
+            id = target.dataset.id
+            desc = target.dataset.desc
+            item = [
+                {
+                    "id": id,
+                    "desc": desc
+                }
+            ]
+            allItems.push(item)
+            obj.username = "zvincze";
+
+            //obj is now json
+            var str = JSON.stringify(obj);
+            //str == {'username':'zvincze'}
+            mlocalStore.push(text)
             localStorage.setItem('notes', text)
 
         }, false);
