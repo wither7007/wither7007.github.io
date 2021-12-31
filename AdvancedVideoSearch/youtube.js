@@ -31,8 +31,10 @@ document.addEventListener('click', function (e) {
 window.onload = function () {
     document.getElementById("subject").focus();
 }
-// sub = document.getElementById('subject').focus()
-// document.getElementById('subSubject').addEventListener('click', sumClick)
+document.getElementById('subSubject').addEventListener('click', mReload);
+function mReload() {
+    location.reload()
+}
 
 document.getElementById('formS').addEventListener('submit', sumClick)
 url = ""
