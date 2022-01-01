@@ -65,16 +65,16 @@ function getYouTube(url) {
             // handle success
             xy = response.data
             ObjtoHtml(xy)
-            console.log(xy);
+            // console.log(xy);
         })
     function ObjtoHtml(lines) {
-        console.log("lines are: ", lines)
+        // console.log("lines are: ", lines)
         // debugger
         lines.items.forEach(a => {
             // console.log(a.id.videoId)
             vId = a.id.videoId
             dur = `https://www.googleapis.com/youtube/v3/videos?id=${vId}&part=contentDetails&key=AIzaSyC4Yhlk-ADYBzSyiqD0QEgrvjB3plD4jao`
-            console.log(dur)
+            // console.log(dur)
             axios.get(dur)
                 .then(function (durRes) {
                     xd = durRes.data
@@ -83,14 +83,15 @@ function getYouTube(url) {
                         `<div class="col">
                 <div class="p-3 border bg-light" data-id=${a.id.videoId} data-desc="${a.snippet.description}" data-duration=${duration}>
                     https://www.youtube.com/watch?v=${a.id.videoId}<br>
-                    Video id is : ${a.id.videoId}
+                    Video id is : ${a.id.videoId}<br>
+                    Channel: <a target="_blank" href="https://www.youtube.com/channel/${a.snippet.channelId}">${a.snippet.channelTitle}</a>
                     <hr> ${a.snippet.description}<br>
                     ${a.snippet.publishedAt}
                     <br>Duration is ${duration} <br> <a href="https://www.youtube.com/watch?v=${a.id.videoId}"
                         target="_blank">video</a>
                 </div>
             </div> `
-                    console.log("duration is " + duration)
+                    // console.log("duration is " + duration)
                 })
         })
     }

@@ -55,8 +55,8 @@
             <div class="col">
                 <div class="p-3 border rounded-3 bg-light">row 7</div>
             </div>
-            <div class="col">
-                <div class="p-3 border rounded-3 bg-light">row 8</div>
+            <div class="col" id="red">
+                <div class="p-3 border rounded-3 bg-light">Please turn red row 8</div>
             </div>
         </div>
         <article id="electric-cars" data-columns="3" data-index-number="12314" data-parent="cars">
@@ -76,6 +76,12 @@
             var target = e.target || e.srcElement,
                 text = target.textContent || target.innerText;
             // console.log(text)
+            // if (target.style.display === "none") {
+            //     target.style.display = "block";
+            // } else {
+            //     target.style.display = "none";
+            // }
+            target.style.backgroundColor = "red"
             id = target.dataset.id
             desc = target.dataset.desc
             item = [
