@@ -6,7 +6,21 @@ document.addEventListener('click', function (e) {
     var target = e.target
     text = target.textContent || target.innerText;
     if (target.getAttribute("data-id")) {
-        console.log("yes")
+        // console.log("yes")
+        // console.log(target)
+        target.classList.toggle("bg-light");
+        // bg = "rgb(0, 255, 255)"
+        // if (target.style.backgroundColor === 'rgb(0, 255, 255)') {
+        //     target.classList.add("bg-light")
+        //     // $0.classList.add("bg-light")
+        //     // $0.style.backgroundColor === bg
+        //     // $0.style.backgroundColor 
+        //     target.style.backgroundColor = bg
+        // } else {
+        //     target.style.backgroundColor = bg
+        //     target.classList.remove("bg-light")
+        // }
+        // target.style.backgroundColor = bg
         id = target.dataset.id
         desc = target.dataset.desc
         duration = target.dataset.duration
@@ -19,7 +33,7 @@ document.addEventListener('click', function (e) {
             }
         ]
         allItems.push(item)
-        localStore.push(id)
+        // localStore.push(id)
         localStorage.setItem('notes', text)
         // data attribute doesn't exist or is empty
     }
