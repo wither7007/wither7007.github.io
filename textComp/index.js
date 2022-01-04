@@ -23,6 +23,13 @@ Chorus: Why  she  had  to  go___ I  don't know she would-n't say
  C  Dm7      G7     Bb     F
 
 `
+document.addEventListener('click', function (e) {
+    var target = e.target
+    text = target.textContent || target.innerText;
+    target.nextSibling.classList.toggle("hidden");
+    // debugger
+    console.log(text)
+})
 textArray = text.split('\n').map(f => f.trim())
 textArray = textArray.filter(noNull)
 function noNull(item) {
@@ -38,24 +45,29 @@ firstThree = textArray.map(
 //add event listenr to top sentences
 rn = (x) => Math.floor(Math.random() * x)
 
-al = (e) => {
-    // debugger
-    clue = e.target.innerHTML
-    fullSen = textArray.filter(p => p.indexOf(clue) != -1)
-    console.log(clue)
-    spot = textArray.indexOf(clue)
-    textArray[spot + 1]
-    ans.innerHTML = textArray[spot + 1]
-    console.log(e.target.innerHTML)
-}
+// al = (e) => {
+//     // debugger
+//     clue = e.target.innerHTML
+//     fullSen = textArray.filter(p => p.indexOf(clue) != -1)
+//     // console.log(clue)
+//     spot = textArray.indexOf(clue)
+//     textArray[spot + 1]
+//     ans.innerHTML = textArray[spot + 1]
+//     // console.log(e.target.innerHTML)
+// }
 
+// ${i % 2 === 0 ? "<br>" : "<div class='btn'"}
+// ${i % 2 === 0 ? "<br>" : "<hr>"}
 
 con = document.querySelector('.row')
-conH = textArray.map(k => `<div class='pd-2 gx-3 border border-primary sentThree'>${k}</div>`).join("")
+conH = textArray.map((k, i) => `<div ${i % 2 != 0 ? "style='color:white' class='hidden'" : ""}
+<div  class='pd-2 gx-4 border border-primary sentThree'>
+
+${k} <br>  </div>`).join("")
 con.innerHTML = conH
 
-m = Array.from(document.querySelectorAll('.sentThree'))
-m.forEach(x => x.addEventListener('click', al))
+// m = Array.from(document.querySelectorAll('.sentThree'))
+// m.forEach(x => x.addEventListener('click', al))
 // change answer
 // btn = document.querySelector('.btn')
 ans = document.querySelector('.answer')
@@ -69,7 +81,7 @@ textArray.forEach(function (item, index) {
 });
 
 for (const key in dictionary) {
-    console.log(`${key}: ${dictionary[key]}`);
+    console.log(`Dictionary:  ${key}: ${dictionary[key]}`);
 }
 
 // text = `The Lord is my shepherd; I shall not want.

@@ -6,8 +6,6 @@ document.addEventListener('click', function (e) {
     var target = e.target
     text = target.textContent || target.innerText;
     if (target.getAttribute("data-id")) {
-        // console.log("yes")
-        // console.log(target)
         target.classList.toggle("bg-light");
         // bg = "rgb(0, 255, 255)"
         // if (target.style.backgroundColor === 'rgb(0, 255, 255)') {
