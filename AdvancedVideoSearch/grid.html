@@ -65,6 +65,21 @@
         </article>
     </div>
     <script>
+        gallItems.forEach(element => {
+            element.forEach(a => console.log(a.id))
+
+        });
+        const allItems = []
+        allItems.push(JSON.parse(localStorage.getItem('youtubes')))
+        // allItems.push(JSON.parse(localStorage.getItem('youtubes')))
+        myDiv = document.createElement('div')
+        myDiv.style.height = '10rem'
+        myDiv.style.width = '10rem'
+        myDiv.style.border = 'solid 1px #000'
+        myDiv.style.backgroundColor = '#fff'
+        myDiv.textContent = "The lady doth protest too much, methinks"
+        document.body.appendChild(myDiv)
+        const x = allItems.map(a => a.id)
         sup =
         {
             "squadName": "Super hero squad",
@@ -113,7 +128,7 @@
         desc = ''
         mlocalStore = []
         var obj = {};
-        allItems = []
+        // allItems = []
         // const notes = JSON.parse(localStorage.getItem('notes'))
         document.addEventListener('click', function (e) {
             e = e || window.event;

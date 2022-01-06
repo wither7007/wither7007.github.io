@@ -1,5 +1,17 @@
-localStore = []
-allItems = []
+function SaveDataToLocalStorage(data) {
+    var a = [];
+    // Parse the serialized data back into an aray of objects
+    a = JSON.parse(localStorage.getItem('session')) || [];
+    // Push the new data (whether it be an object or anything else) onto the array
+    a.push(data);
+    // Alert the array value
+    console.log(a);  // Should be something like [Object array]
+    // Re-serialize the array back into a string and store it in localStorage
+    localStorage.setItem('session', JSON.stringify(a));
+}
+const localStore = []
+const allItems=[]
+// const allItems = JSON.parse(localStorage.getItem('youtubes'))
 // const notes = JSON.parse(localStorage.getItem('notes'))
 document.addEventListener('click', function (e) {
     e = e || window.event;
@@ -7,32 +19,21 @@ document.addEventListener('click', function (e) {
     text = target.textContent || target.innerText;
     if (target.getAttribute("data-id")) {
         target.classList.toggle("bg-light");
-        // bg = "rgb(0, 255, 255)"
-        // if (target.style.backgroundColor === 'rgb(0, 255, 255)') {
-        //     target.classList.add("bg-light")
-        //     // $0.classList.add("bg-light")
-        //     // $0.style.backgroundColor === bg
-        //     // $0.style.backgroundColor 
-        //     target.style.backgroundColor = bg
-        // } else {
-        //     target.style.backgroundColor = bg
-        //     target.classList.remove("bg-light")
-        // }
-        // target.style.backgroundColor = bg
         id = target.dataset.id
         desc = target.dataset.desc
         duration = target.dataset.duration
-        console.log(id)
-        item = [
+        // console.log(id)
+        item = 
             {
                 "id": id,
                 "desc": desc,
                 "duration": duration
             }
-        ]
+        
         allItems.push(item)
         // localStore.push(id)
-        localStorage.setItem('notes', text)
+        localStorage.setItem('youtubes', JSON.stringify(allItems))
+        // debugger
         // data attribute doesn't exist or is empty
     }
     else {
@@ -42,13 +43,13 @@ document.addEventListener('click', function (e) {
 }, false);
 window.onload = function () {
     document.getElementById("subject").focus();
+    document.getElementById('formS').addEventListener('submit', sumClick)
 }
 document.getElementById('subSubject').addEventListener('click', mReload);
 function mReload() {
     location.reload()
 }
 
-document.getElementById('formS').addEventListener('submit', sumClick)
 url = ""
 function sumClick(event) {
     sub = document.getElementById('subject').value
@@ -80,8 +81,6 @@ function getYouTube(url) {
             // console.log(xy);
         })
     function ObjtoHtml(lines) {
-        // console.log("lines are: ", lines)
-        // debugger
         lines.items.forEach(a => {
             // console.log(a.id.videoId)
             vId = a.id.videoId
@@ -111,37 +110,49 @@ function getYouTube(url) {
 res = ''
 resArray = []
 console.log("script start")
-/*
-const div = document.createElement('div');
-div.className = 'foo';
+// /*
+// const div = document.createElement('div');
+// div.className = 'foo';
 
-// our starting state: <div class="foo"></div>
-console.log(div.outerHTML);
+// // our starting state: <div class="foo"></div>
+// console.log(div.outerHTML);
 
-// use the classList API to remove and add classes
-div.classList.remove("foo");
-div.classList.add("anotherclass");
+// // use the classList API to remove and add classes
+// div.classList.remove("foo");
+// div.classList.add("anotherclass");
 
-// <div class="anotherclass"></div>
-console.log(div.outerHTML);
+// // <div class="anotherclass"></div>
+// console.log(div.outerHTML);
 
-// if visible is set remove it, otherwise add it
-div.classList.toggle("visible");
+// // if visible is set remove it, otherwise add it
+// div.classList.toggle("visible");
 
-// add/remove visible, depending on test conditional, i less than 10
-div.classList.toggle("visible", i < 10);
+// // add/remove visible, depending on test conditional, i less than 10
+// div.classList.toggle("visible", i < 10);
 
-console.log(div.classList.contains("foo"));
+// console.log(div.classList.contains("foo"));
 
-// add or remove multiple classes
-div.classList.add("foo", "bar", "baz");
-div.classList.remove("foo", "bar", "baz");
+// // add or remove multiple classes
+// div.classList.add("foo", "bar", "baz");
+// div.classList.remove("foo", "bar", "baz");
 
-// add or remove multiple classes using spread syntax
-const cls = ["foo", "bar"];
-div.classList.add(...cls);
-div.classList.remove(...cls);
+// // add or remove multiple classes using spread syntax
+// const cls = ["foo", "bar"];
+// div.classList.add(...cls);
+// div.classList.remove(...cls);
 
-// replace class "foo" with class "bar"
-div.classList.replace("foo", "bar");
-            // "publishedAt": "2019-09-23T15:00:22Z",
+// // replace class "foo" with class "bar"
+// div.classList.replace("foo", "bar");
+//             // "publishedAt": "2019-09-23T15:00:22Z",
+        // bg = "rgb(0, 255, 255)"
+        // if (target.style.backgroundColor === 'rgb(0, 255, 255)') {
+        //     target.classList.add("bg-light")
+        //     // $0.classList.add("bg-light")
+        //     // $0.style.backgroundColor === bg
+        //     // $0.style.backgroundColor 
+        //     target.style.backgroundColor = bg
+        // } else {
+        //     target.style.backgroundColor = bg
+        //     target.classList.remove("bg-light")
+        // }
+        // target.style.backgroundColor = bg
