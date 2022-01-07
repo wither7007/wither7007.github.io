@@ -4,14 +4,21 @@ function SaveDataToLocalStorage(data) {
     a = JSON.parse(localStorage.getItem('session')) || [];
     // Push the new data (whether it be an object or anything else) onto the array
     a.push(data);
-    // Alert the array value
+    // Alert the array valuei
     console.log(a);  // Should be something like [Object array]
     // Re-serialize the array back into a string and store it in localStorage
     localStorage.setItem('session', JSON.stringify(a));
 }
 const localStore = []
 const allItems=[]
-// const allItems = JSON.parse(localStorage.getItem('youtubes'))
+var localString=allItems.map((a)=>{a.id})
+i =JSON.parse(localStorage.getItem('youtubes')) 
+if (JSON.parse(localStorage.getItem('youtubes'))) {
+    console.log("youtubes yes")
+    allItems.push(JSON.parse(localStorage.getItem('youtubes')))
+}
+
+// allItems.forEach(v=>console.log(v.id))
 // const notes = JSON.parse(localStorage.getItem('notes'))
 document.addEventListener('click', function (e) {
     e = e || window.event;
@@ -52,7 +59,9 @@ function mReload() {
 
 url = ""
 function sumClick(event) {
+    document.getElementById('subject').value="john lennon"
     sub = document.getElementById('subject').value
+    //replace spaces with plus sign for search api
     sub = sub.replace(/\s+/g, '+');
     // alert(document.getElementById('subject').value)
     // alert("form submitted")
