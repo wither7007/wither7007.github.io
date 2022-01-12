@@ -118,9 +118,8 @@ for (let f in servicesMenu) {
     <li><a class="subheader">${f}</a></li>
 `
   for (let p in servicesMenu[f]) {
-    html += `<li><a class="waves-effect ${p}" href="#!"> ${
-      servicesMenu[f][p]
-    }</a></li>`
+    html += `<li><a class="waves-effect ${p}" href="#!"> ${servicesMenu[f][p]
+      }</a></li>`
   }
 }
 //populate collapsible menu
@@ -135,9 +134,8 @@ for (let f in servicesMenu) {
             <div class="collapsible-header"><i class="material-icons">expand_more</i>${f}</div>
 `
   for (let p in servicesMenu[f]) {
-    htmlC += `<div class="collapsible-body"><span class="${p}">${
-      servicesMenu[f][p]
-    }</span></div>`
+    htmlC += `<div class="collapsible-body"><span class="${p}">${servicesMenu[f][p]
+      }</span></div>`
   }
 
   htmlC += "</li>"
@@ -168,7 +166,7 @@ function mapper(aPlaces) {
   let p = aPlaces
     .map(
       f =>
-      `<div class="row ${f[10] === "h" ? "special" : 3}" style="height: 95 %">
+        `<div class="row ${f[10] === "h" ? "special" : 3}" style="height: 95 %">
                 <div class="card blue-grey darken-1 " style="height: 95%">
                     <div class="card-content white-text">
                         <span class="card-title">${f[0]}
@@ -179,12 +177,12 @@ function mapper(aPlaces) {
                         Hours: ${f[3]} <br>
                         Remarks: ${f[4]} <br>
                         <a class="myButton" style="margin-top:20px;" href="https://www.google.com/maps/search/?api=1&query=${f[0].replace(
-                          /\s+/g,
-                          "+"
-                        )}+Minneapolis" target="_blank">Directions </a>
+          /\s+/g,
+          "+"
+        )}+Minneapolis" target="_blank">Directions </a>
                         
                        <a class="myButton" style="margin-top:20px; margin-left:10px" href="http://${f[15]}" target="_blank">website </a>  
-                       <a class="myButton" style="margin-top:20px; margin-left:8px"href="tel:${f[2].replace(/-/g,"")}" id="call" target="_blank">Call </a>  
+                       <a class="myButton" style="margin-top:20px; margin-left:8px"href="tel:${f[2].replace(/-/g, "")}" id="call" target="_blank">Call </a>  
                         </div>
                         
 
@@ -223,7 +221,7 @@ for (let sc in serviceConvert) {
 }
 
 function removeTop() {
-  document.querySelector('.top').style.display = "none"
+  // document.querySelector('.top').style.display = "none"
   document.querySelector('#second').style.height = "100vh"
 }
 Array.from(document.querySelectorAll('.collapsible-header')).forEach(
@@ -252,7 +250,7 @@ let greeting = () => {
 
 
 }
-document.getElementById('today').innerHTML = `${greeting()}<br>Today is: <br>${day} ${month} ${now.getDate()}, ${now.getFullYear()}`
+document.getElementById('today').innerHTML = `${greeting()}  Today is:  ${day} ${month} ${now.getDate()}, ${now.getFullYear()}`
 
 function print() {
   pa = []
@@ -277,25 +275,25 @@ function print() {
     printable: pa,
     documentTitle: serviceConvert[places[0][8]],
     properties: [{
-        field: "0",
-        displayName: "Place",
-      },
-      {
-        field: "1",
-        displayName: "Address"
-      },
-      {
-        field: "2",
-        displayName: "Hours"
-      },
-      {
-        field: "3",
-        displayName: "Phone"
-      },
-      {
-        field: "4",
-        displayName: "Remarks"
-      }
+      field: "0",
+      displayName: "Place",
+    },
+    {
+      field: "1",
+      displayName: "Address"
+    },
+    {
+      field: "2",
+      displayName: "Hours"
+    },
+    {
+      field: "3",
+      displayName: "Phone"
+    },
+    {
+      field: "4",
+      displayName: "Remarks"
+    }
     ],
     type: "json",
     gridStyle: "border: 2px solid #3971A5;"

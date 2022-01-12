@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var r = {}
+        var meals = {}
+        var t = {}
+        const objArray = []
+        var url = 'https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/menu?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw'
+
+        const menuData = async () => {
+            try {
+                const md = await axios.get(url)
+                console.log("from try: ", md.data)
+                r = md.data
+            }
+            catch (err) {
+
+            }
+            enumR(r)
+            // for (z in r) { console.log("from asynch \n\n", z) }
+        }
+        menuData();
+        enumR = (a) => {
+            console.log(`from function \n\n ${JSON.stringify(a)}`)
+            days = r.values[1]
+            breakfast = r.values[2]
+            lunch = r.values[3]
+            dinner = r.values[4]
+            console.log(days)
+            console.log(breakfast)
+            console.log(lunch)
+            console.log(dinner)
+            // var meals = {}
+            days.forEach((key, i) => meals[key] = [breakfast[i], lunch[i], dinner[i]])
+            stri = JSON.stringify(meals)
+            console.log(stri)
+            console.log(meals)
+            Object.keys(meals).forEach(key => {
+                // console.log(key, meals[key]);
+                console.log(key)
+                console.log('-------------------------------')
+                meals[key].forEach(a => console.log(a))
+            });
+        }
+        var keys = ['foo', 'bar', 'baz'];
+        var values = [11, 22, 33]
+
+        var result = {};
+        keys.forEach((key, i) => result[key] = values[i]);
+        console.log(JSON.stringify(result));
+        // k = r.values[1]
+
+
+    </script>
+
+</body>
+
+</html>
