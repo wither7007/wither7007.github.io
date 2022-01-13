@@ -18,7 +18,7 @@ function fetchWeather() {
   let key = 'c1226a736dac2e52a2c456f0dc2c03ba';
   let lang = 'en';
   let units = 'imperial';
-  let url = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${key}&units=${units}&lang=${lang}`;
+  let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${key}&units=${units}&lang=${lang}`;
   //fetch the weather
   fetch(url)
     .then((resp) => {
