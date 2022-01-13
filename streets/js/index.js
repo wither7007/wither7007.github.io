@@ -22,7 +22,6 @@ function fetchWeather() {
   //fetch the weather
   fetch(url)
     .then((resp) => {
-      console.log(resp)
       if (!resp.ok) throw new Error(resp.statusText);
       return resp.json();
     })
@@ -32,7 +31,6 @@ function fetchWeather() {
     .catch(console.err);
 }
 function showWeather(resp) {
-  console.log(resp);
   // debugger
   let row = document.querySelector('#weather');
   //clear out the old weather and add the new
@@ -55,7 +53,6 @@ function showWeather(resp) {
   })
     .join(' ');
   row.innerHTML = weather
-  console.log(weather)
 }
 let serviceConvert = {
   cc: "Clothes Closet",
@@ -255,13 +252,15 @@ fetch(url)
   .then(resp => resp.json())
   .then(function (data) {
     allPlaces = allPlaces.concat(data)
-    filType(allPlaces, "cc")
+    filType(allPlaces, "sh")
   })
 
 for (let sc in serviceConvert) {
   let p = document.getElementsByClassName(sc)
   for (q of p) {
     q.addEventListener("click", function () {
+
+      // debugger
       filType(allPlaces, sc)
     })
   }
