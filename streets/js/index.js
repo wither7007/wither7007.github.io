@@ -145,9 +145,9 @@ let servicesMenu = {
     ex: "Ex-offenders programs"
   },
 
-  "Acknowledgements": {
-    sp: "St. Stephens",
-    lm: "Mission Lodge"
+  "Other": {
+    sp: "Devloper's Page",
+    lp: "<a href='https://www.wandinround.com/nohome/' target='_blank' >A Song</a>",
   }
 }
 // const services = require('./cat.js')
@@ -259,6 +259,7 @@ for (let sc in serviceConvert) {
   let p = document.getElementsByClassName(sc)
   for (q of p) {
     q.addEventListener("click", function () {
+      alert(sc)
 
       // debugger
       filType(allPlaces, sc)

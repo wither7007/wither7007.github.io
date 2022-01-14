@@ -16,7 +16,14 @@ ul {
 body>a>i {
     margin: 1.4rem;
 }
+a {
+    text-decoration: none;
+}
 
+.debug {
+    font-size: 20px;
+    color: #f00;
+}
 .myButton {
     color: #000 !important;
     text-transform: uppercase;
