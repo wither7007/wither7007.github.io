@@ -145,8 +145,8 @@ let servicesMenu = {
     ex: "Ex-offenders programs"
   },
 
-  "Other": {
-    sp: "Devloper's Page",
+  "Developer": {
+    sp: "A story",
     lp: "<a href='https://www.wandinround.com/nohome/' target='_blank' >A Song</a>",
   }
 }
