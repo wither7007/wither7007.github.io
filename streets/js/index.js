@@ -259,7 +259,6 @@ for (let sc in serviceConvert) {
   let p = document.getElementsByClassName(sc)
   for (q of p) {
     q.addEventListener("click", function () {
-      alert(sc)
 
       // debugger
       filType(allPlaces, sc)
