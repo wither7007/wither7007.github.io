@@ -46,6 +46,10 @@ a {
 #second {
     transition: .5s;
 }
+#second > .box {
+    background-color: #0ff;
+    font-size: 20rem;
+}
 
 #today {
     font-weight: bold;
@@ -67,6 +71,7 @@ a {
     /* padding: 10px, 10px; */
     padding: 0 20px;
     align-items: center;
+    color: #333;
 }
 
 #wet {
