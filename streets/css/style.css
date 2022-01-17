@@ -45,10 +45,13 @@ a {
 
 #second {
     transition: .5s;
+    height: 85vh;
 }
-#second > .box {
+
+#second  .box {
     background-color: #0ff;
     font-size: 20rem;
+    height: 90vh;
 }
 
 #today {

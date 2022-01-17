@@ -268,7 +268,7 @@ for (let sc in serviceConvert) {
 
 function removeTop() {
   // document.querySelector('.top').style.display = "none"
-  document.querySelector('#second').style.height = "100vh"
+  document.querySelector('#second').style.height = "85vh"
 }
 Array.from(document.querySelectorAll('.collapsible-header')).forEach(
   ele => ele.addEventListener('click', removeTop)
