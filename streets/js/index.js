@@ -146,8 +146,9 @@ let servicesMenu = {
   },
 
   "Developer": {
-    sp: "A story",
-    lp: "<a href='https://www.wandinround.com/nohome/' target='_blank' >A Song</a>",
+    la: "A story",
+    yp: "<a href='https://www.wandinround.com/nohome/' target='_blank' >A Song</a>",
+    lp: "<a href='https://donate.doctorswithoutborders.org/secure/donate' target='_blank' >Donate</a>",
   }
 }
 // const services = require('./cat.js')
