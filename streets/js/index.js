@@ -146,7 +146,7 @@ let servicesMenu = {
   },
 
   "Developer": {
-    la: "A story",
+    yx: "<a href='https://www.wandinround.com/about.html/' target='_blank' >About</a>",
     yp: "<a href='https://www.wandinround.com/nohome/' target='_blank' >A Song</a>",
     lp: "<a href='https://donate.doctorswithoutborders.org/secure/donate' target='_blank' >Donate</a>",
     sk: "<a href='https://docs.google.com/spreadsheets/d/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/edit#gid=1580880162' target='_blank' >Data</a>",
