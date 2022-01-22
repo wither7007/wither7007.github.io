@@ -59,7 +59,7 @@ function mReload() {
 
 url = ""
 function sumClick(event) {
-    document.getElementById('subject').value="john lennon"
+    // document.getElementById('subject').value="john lennon"
     sub = document.getElementById('subject').value
     //replace spaces with plus sign for search api
     sub = sub.replace(/\s+/g, '+');
