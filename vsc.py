@@ -17,6 +17,16 @@ api="AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 URL =f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%2B1{xPhone}&inputtype=phonenumber&key={api}"
 print(f"maps url is: {URL}")
 # location given here
+input="The Clothes ? Closet/CSJ Ministry Center"
+input = re.sub(r"[/?]", " ", input)
+input = re.sub(r"\s+", "%", input)
+print(input)
+pattern = re.compile('[/]')
+s = re.sub(pattern, '', input)
+s=s.replace(" ","%")
+print(s)
+
+print(s)    # WelcomeUser_12
 
 # sending get request and saving the response as response object
 r = requests.get(URL)

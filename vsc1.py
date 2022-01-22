@@ -1,27 +1,43 @@
 import json
 import requests
+import sys
+import re
 file=open(r"C:\projects\wither7007.github.io\streets\data.json")
 # for a in file:
 #     print(a)
 dataf = json.load(file)
 k=0
 str=""
-for i in range(0,5):
+for i in range(0,13):
     print(f"\n********** {i}  *************\n")
     print(dataf[i][0])
-    word=(dataf[i][0].replace(" ","%"))
+    word=(dataf[i][0])
+    word = re.sub(r"[/?]", " ", word)
+    word = re.sub(r"\s+", "%", word)
+    word = re.sub(r"Cent", "ent", word)
     search=f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%{word}&inputtype=textquery&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
-    print(search)
+    # print(search)
+    str+=search+"\n\n"
+    print(f"Search is: {search}\n")
     r = requests.get(search)
-print(data)
-print(data['candidates'][0])
-pId=data['candidates'][0]['place_id']
-pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
-
-
     data = r.json()
-    # print(data)
-    print(data['candidates'][0])
+    pId=data['candidates'][0]['place_id']
+    # sys.exit()
+    ht=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+    print(f"\n\n{ht}")
+    s=requests.get(ht)
+    final=s.json()
+    print("=======================================================")
+    print(final)
+sys.exit()
+ht="https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+
+pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+print(data)
+
+data = r.json()
+# print(data)
+print(data['candidates'][0])
 
 
     # for a in data[i]:
