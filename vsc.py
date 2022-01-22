@@ -22,11 +22,12 @@ print(f"maps url is: {URL}")
 r = requests.get(URL)
 
 # extracting data in json format
-word="smith+lodge"
+word="Cornerstone+Ministry+Park+Ave.+United+Methodist+Church"
 search=f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%{word}&inputtype=textquery&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 clipboard.copy(search)
-pId="ChIJFamAZPw1s1IRSpjaV0Qj5KM"
+pId="ChIJiXJHreUn9ocRcX6PvU8T1i8"
 pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+clipboard.copy(pUrl)
 
 data = r.json()
 print(data)
