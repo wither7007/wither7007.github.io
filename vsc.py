@@ -54,6 +54,13 @@ pId=data['candidates'][0]['place_id']
 pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 clipboard.copy(pUrl)
 print(f"Place id is: {pUrl}")
+url="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+pr=requests.get(url).text
+al = json.loads(pr)
+print(al.keys())
+
+
+
 # # extracting latitude, longitude and formatted address
 # # of the first matching location
 # latitude = data['results'][0]['geometry']['location']['lat']
