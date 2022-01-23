@@ -26,6 +26,14 @@ s = re.sub(pattern, '', input)
 s=s.replace(" ","%")
 print(s)
 
+rPhone="612-870-1815"
+xPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), rPhone)
+api="AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+spot=f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%2B1{xPhone}&inputtype=phonenumber&key={api}" 
+clipboard.copy(spot)
+pId="ChIJQ17iyLcys1IRCDgA4vOWqqs"
+pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+clipboard.copy(pUrl)
 print(s)    # WelcomeUser_12
 
 # sending get request and saving the response as response object
