@@ -2,6 +2,7 @@ import json
 import requests
 import sys
 import re
+import clipboard
 file=open(r"C:\projects\wither7007.github.io\streets\data.json")
 # for a in file:
 #     print(a)
@@ -54,6 +55,12 @@ print('done')
 #         str+=f"{k} {a}"
 #         str+="\n"
 #     k=0
+struct=""
+for index, item in enumerate(dataf[1]):    
+  print(index, item)
+  struct+=f"{index} {item} \n"
+clipboard.copy(struct)
+
 pId="ChIJiXJHreUn9ocRcX6PvU8T1i8"
 pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 data = r.json()
