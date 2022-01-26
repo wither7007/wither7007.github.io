@@ -4,6 +4,10 @@ import re
 import json
 import itertools
 import sys
+def phone(number):
+    pPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), number)
+    # print(pPhone)
+    return(pPhone)
 def em(en):
     struct=""
     for index, item in enumerate(en):    
@@ -47,9 +51,11 @@ for a in range(int(len(arr)/6)):
     if len(l[0]) > 0:
         g.append(l)
 yk=json.dumps(g,indent=4)
+for each in g:
+    print(each[2])
 
 
-print(yk[0:945])
+# print(yk[0:945])
 clipboard.copy(yk)
 file2 = open(r"C:\projects\wither7007.github.io\streets\data.json","w+")
 file2.write(str(yk))

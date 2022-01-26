@@ -193,6 +193,7 @@ document.getElementById("collapse").innerHTML = htmlC
 function filt(item) {
   // debugger
   let sear = document.getElementById("search").value.toUpperCase()
+
   if (
     item[0].toUpperCase().match(sear) ||
     serviceConvert[item[8]].toUpperCase().match(sear)
