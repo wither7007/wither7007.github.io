@@ -8,6 +8,12 @@ def phone(number):
     pPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), number)
     print(number)
     
+def getList(dict):
+    return dict.keys()
+      
+# Driver program
+dict = {1:'Geeks', 2:'for', 3:'geeks'}
+print(getList(dict))
 query=f"https://maps.googleapis.com/maps/api/place/textsearch/xml?query=mission+lodge&location=Minnesota&key={api}"
 print(query)
 # sys.exit()

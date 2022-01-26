@@ -168,6 +168,8 @@ i.material-icons {
     height: 90vh;
     overflow: auto;
     border: solid green 2px;
+    border-radius: .3rem;
+     box-shadow: 5px 10px #2222;
 }
 
 .gridCard {
