@@ -32,6 +32,17 @@ print('\n\n')
 print(pId)
 ht=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 
+
+target="mission+lodge"
+
+query= f"https://maps.googleapis.com/maps/api/place/textsearch/xml?query={target}&location=Minnesota&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
+
+print(f"\n{query}")
+sys.exit()
+
+
+
+
 rev= f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Crating%2Creviews%2Cformatted_address%2Cformatted_phone_number&place_id=ChIJq1Kip_41s1IRRaD2qN-Vfo0&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 
 x=requests.get(rev)
@@ -39,14 +50,3 @@ print(f"ht is \n {ht}\n")
 info=x.json()
 infoResult=info['result']
 # print(infoResult)
-with open("review", "w", encoding="utf-8") as f:
-    f.write(str(infoResult))
-
-# print(f"\n\nxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx{info['result']['name']}\n")
-# # info['result']['name']
-# # info['result']['website']
-
-
-# print(f"\n Locale: \n {info}\n")
-# print(xPhone)
-# print(URL)
