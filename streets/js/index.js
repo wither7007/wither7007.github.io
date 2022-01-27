@@ -228,7 +228,7 @@ function mapper(aPlaces) {
           "+"
         )}+Minneapolis" target="_blank">Directions </a>
                         
-                       <a class="myButton" style="margin-top:20px; margin-left:10px" href="http://${f[15]}" target="_blank">website </a>  
+                       <a class="myButton" style="margin-top:20px; margin-left:10px" href="${f[15]}" target="_blank">website </a>  
                        <a class="myButton" style="margin-top:20px; margin-left:8px"href="tel:${f[2].replace(/-/g, "")}" id="call" target="_blank">Call </a>  
                         </div>
                         

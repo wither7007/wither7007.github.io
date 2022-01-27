@@ -1,4 +1,5 @@
 import json
+ihich=23
 import requests
 import sys
 import re
@@ -12,8 +13,7 @@ def em(en):
 api="AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 def phone(number):
     pPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), number)
-    print(number)
-    
+    print(number)    
 def getList(dict):
     return dict.keys()
 def getMaps(place):
@@ -32,42 +32,44 @@ fileJ=r"C:\projects\wither7007.github.io\streets\data.json"
 
 with open(fileJ, 'r') as f:
     array = json.load(f)
-for a in range(3):
-    print(a)
-n=getMaps(array[3][0])    
-for p in array:
-    searchP=p[0].replace(" ", "+")
-    print(f"{p[0]} \t {searchP}")
-o=n['result']
-o.pop('reviews')
-o.pop('address_components')
-k=o['website']
-# p=getList(o)
-# for state in o.keys():
-#    print(state)
-name=[]
-name.append(o['name'])
-name.append(o['formatted_address'])
-name.append(o['formatted_phone_number'])
-name.append(array[0][3])
-name.append(array[0][4])
-name.append(array[0][5])
-name.append('')
-name.append('')
-name.append(array[0][5])
-name.append('0')
-name.append('')
-name.append(o['formatted_address'])
-name.append('')
-name.append('')
-name.append('')
-#//todo change for https
-name.append(re.sub('http://','',o['website']))
-
 name2=[]
-name2.append(name)
+for which in range(47):
+    try:
+        n=getMaps(array[which][0])    
+        for p in array:
+            searchP=p[0].replace(" ", "+")
+            # print(f"{p[0]} \t {searchP}")
+        o=n['result']
+        o.pop('reviews')
+        o.pop('address_components')
+        k=o['website']
+        # p=getList(o)
+        # for state in o.keys():
+        #    print(state)
+        name=[]
+        name.append(o['name'])
+        name.append(o['formatted_address'])
+        name.append(o['formatted_phone_number'])
+        name.append(array[which][3])
+        name.append(array[which][4])
+        name.append(array[which][5])
+        name.append('')
+        name.append('')
+        name.append(array[which][5])
+        name.append('0')
+        name.append('')
+        name.append(o['formatted_address'])
+        name.append('')
+        name.append('')
+        name.append('')
+        #//todo change for https
+        # name.append(re.sub('https://','',o['website']))
+        name.append(o['website'])
+        name2.append(name)
+    except:
+        print("an error")
 
-print(json.dumps(name))
+# print(json.dumps(name))
 yk=json.dumps(name2,indent=4)
 file2 = open(r"C:\projects\wither7007.github.io\streets\data.json","w+")
 file2.write(str(yk))
@@ -97,7 +99,7 @@ for k in no.split():
 
 print(array[3][0])
 # print (array)
-target=array[3][0].replace(" ","+")
+target=array[0][0].replace(" ","+")
 query= f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={target}&location=Minnesota&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
 place=requests.get(query)
 placeJ=place.json()
