@@ -33,7 +33,7 @@ fileJ=r"C:\projects\wither7007.github.io\streets\data.json"
 with open(fileJ, 'r') as f:
     array = json.load(f)
 name2=[]
-for which in range(47):
+for which in range(53):
     try:
         n=getMaps(array[which][0])    
         for p in array:
