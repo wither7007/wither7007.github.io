@@ -32,21 +32,52 @@ fileJ=r"C:\projects\wither7007.github.io\streets\data.json"
 
 with open(fileJ, 'r') as f:
     array = json.load(f)
-n=getMaps(array[0][0])    
+for a in range(3):
+    print(a)
+n=getMaps(array[3][0])    
 for p in array:
     searchP=p[0].replace(" ", "+")
     print(f"{p[0]} \t {searchP}")
-with open("myfile.json", 'w', encoding='utf-8') as f: 
-    for key, value in n.items(): 
-        f.write('%s:%s\n' % (key, value))
-print(n['result'])
 o=n['result']
+o.pop('reviews')
+o.pop('address_components')
 k=o['website']
-p=getList(o)
-for state in o.keys():
-   print(state)
-sys.exit()
+# p=getList(o)
+# for state in o.keys():
+#    print(state)
+name=[]
+name.append(o['name'])
+name.append(o['formatted_address'])
+name.append(o['formatted_phone_number'])
+name.append(array[0][3])
+name.append(array[0][4])
+name.append(array[0][5])
+name.append('')
+name.append('')
+name.append(array[0][5])
+name.append('0')
+name.append('')
+name.append(o['formatted_address'])
+name.append('')
+name.append('')
+name.append('')
+#//todo change for https
+name.append(re.sub('http://','',o['website']))
+
+name2=[]
+name2.append(name)
+
+print(json.dumps(name))
+yk=json.dumps(name2,indent=4)
+file2 = open(r"C:\projects\wither7007.github.io\streets\data.json","w+")
+file2.write(str(yk))
+file2.close()
 '''
+import re
+text = re.sub('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))'+, '', text, flags=re.MULTILINE)
+import re
+given_url = 'https://www.google.com'
+print(re.sub('http://','',o['website']))
 address_components
 formatted_address
 formatted_phone_number
@@ -79,16 +110,14 @@ print(targ)
 final=requests.get(targ)
 finalJ=final.json()
 object = json.dumps(finalJ, indent = 4)
-with open("review", "w", encoding="utf-8") as f:
-    f.write(str(object))
 sys.exit()
 
 
 
 
-rev= f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Crating%2Creviews%2Cformatted_address%2Cformatted_phone_number&place_id=ChIJq1Kip_41s1IRRaD2qN-Vfo0&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+# rev= f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Crating%2Creviews%2Cformatted_address%2Cformatted_phone_number&place_id=ChIJq1Kip_41s1IRRaD2qN-Vfo0&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 
-x=requests.get(rev)
+# x=requests.get(rev)
 # print(f"ht is \n {ht}\n")
 info=x.json()
 infoResult=info['result']
