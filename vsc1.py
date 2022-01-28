@@ -1,70 +1,53 @@
 import json
 import requests
-import sys
-import re
-import clipboard
-file=open(r"C:\projects\wither7007.github.io\streets\data.json")
-# for a in file:
-#     print(a)
-dataf = json.load(file)
-k=0
-str=""
-for i in range(0,13):
-    print(f"\n********** {i}  *************\n")
-    print(dataf[i][0])
-    word=(dataf[i][0])
-    word = re.sub(r"[/?]", " ", word)
-    word = re.sub(r"\s+", "%", word)
-    word = re.sub(r"Cent", "ent", word)
-    search=f"https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=%{word}&inputtype=textquery&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
-    # print(search)
-    str+=search+"\n\n"
-    print(f"Search is: {search}\n")
-    r = requests.get(search)
-    data = r.json()
-    pId=data['candidates'][0]['place_id']
-    # sys.exit()
-    ht=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
-    print(f"\n\n{ht}")
-    s=requests.get(ht)
-    final=s.json()
-    print("=======================================================")
-    print(final)
-sys.exit()
-ht="https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+our_list = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]]
 
-pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
-print(data)
+def split(list, no):
+    i=0
+    while i < len(list):
+        print(list[i])
+        i=i+no
+print(split(data,3))
+f=open(r'C:\projects\wither7007.github.io\streets\data.json')
+with open('filename.txt', 'w') as f:
+  for x in data:
+    print(f"{len(x)}")
+chunked_list = list()
+with open('filename.txt', 'w') as f:
+  for x in data:
+    print(f"{x[0], x[8]}", file=f)
+chunk_size = 2
+data=json.load(f)
 
-data = r.json()
-# print(data)
-print(data['candidates'][0])
+# g=data['values']
+sheetsUrl="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
+s=requests.get(sheetsUrl)
+final=s.json()
+for i in range(0, len(our_list), chunk_size):
+    chunked_list.append(our_list[i:i+chunk_size])
+# def clist(r_list):
+#   for i in range(0, len(r_list), chunk_size):
+#       chunked_list.append(r_list[i:i+chunk_size])
+  # print(chunked_list)
+# c=clist(final)
+# v=clist(our_list)
+from itertools import zip_longest
+our_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+chunk_size = 3
+chunked_list = list(zip_longest(*[iter(our_list)]*chunk_size, fillvalue=''))
+print(chunked_list)
+# Returns: [(1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, '')]
+chunked_list = [list(item) for item in list(zip_longest(*[iter(our_list)]*chunk_size, fillvalue=''))]
+print(chunked_list)
+'''
+test_list = ['1','2','3','4','5','6','7','8','9','10'] 
 
+def split_list(lst, n):  
+    for i in range(0, len(lst), n): 
+        yield lst[i:i + n] 
 
-    # for a in data[i]:
-    #     print(data[i][0])
-    #     str+="\n"
-    # k=0
-# print(str)
-print('done')
-# for i in range(0,5):
-#     print(f"\n********** {i}  *************\n")
-#     for a in data[i]:
-#         print(f"{k} {a}")
-#         k+=1
-#         str+=f"{k} {a}"
-#         str+="\n"
-#     k=0
-struct=""
-for index, item in enumerate(dataf[1]):    
-  print(index, item)
-  struct+=f"{index} {item} \n"
-clipboard.copy(struct)
+n = 3
 
-pId="ChIJiXJHreUn9ocRcX6PvU8T1i8"
-pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
-data = r.json()
-print(data)
-print(data['candidates'][0])
-pId=data['candidates'][0]['place_id']
-pUrl=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+output = list(split_list(test_list, n)) 
+print(output)
+'''

@@ -170,3 +170,11 @@ array
 # print('\n\n')
 # print(pId)
 # ht=f"https://maps.googleapis.com/maps/api/place/details/json?fields=name%2Cwebsite%2Cformatted_phone_number&place_id={pId}&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
+'''
+import json
+f=open(r'C:\projects\wither7007.github.io\streets\data.json')
+data=json.load(f)
+type(f)
+data
+len(data)
+'''
