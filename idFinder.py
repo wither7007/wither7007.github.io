@@ -13,7 +13,7 @@ def em(en):
 api="AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw"
 def phone(number):
     pPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), number)
-    print(number)    
+    # print(number)    
 def getList(dict):
     return dict.keys()
 def getMaps(place):
@@ -29,16 +29,17 @@ def getPlaceStuff(placeId):
     return(finalJ)
 fileJ=r"C:\projects\wither7007.github.io\streets\data.json"
 
-
+#
 with open(fileJ, 'r') as f:
     array = json.load(f)
 name2=[]
-for which in range(53):
+for which in range(len(array)):
+# for which in range(23,24):
     try:
         n=getMaps(array[which][0])    
-        for p in array:
-            searchP=p[0].replace(" ", "+")
-            # print(f"{p[0]} \t {searchP}")
+        # for p in array:
+        #     searchP=p[0].replace(" ", "+")
+        #     # print(f"{p[0]} \t {searchP}")
         o=n['result']
         o.pop('reviews')
         o.pop('address_components')
@@ -46,6 +47,7 @@ for which in range(53):
         # p=getList(o)
         # for state in o.keys():
         #    print(state)
+        print(f"which is: {which} \n n is: {o}")
         name=[]
         name.append(o['name'])
         name.append(o['formatted_address'])
@@ -66,8 +68,12 @@ for which in range(53):
         # name.append(re.sub('https://','',o['website']))
         name.append(o['website'])
         name2.append(name)
-    except:
-        print("an error")
+    except Exception as e:
+        print(f"Which is {which}")
+        # print(f"o['name' is {o['name']}")
+        # print("an error")
+        print (f"my error is: {e}")
+        print("----------------------------\n\n")
 
 # print(json.dumps(name))
 yk=json.dumps(name2,indent=4)
@@ -90,7 +96,6 @@ reviews
 url
 user_ratings_total
 website
-'''
 no="address_components formatted_address formatted_phone_number name place_id rating reviews url user_ratings_total"
 for k in no.split():
     print(f"o['{k}']")
@@ -127,7 +132,6 @@ infoResult=info['result']
 with open("review", "w", encoding="utf-8") as f:
     f.write(str(infoResult))
 
-'''
 array
 0 Joyce Uptown Food Shelf, Inc. 
 1 3041 Fremont Avenue South, Minneapolis MN 55408 

@@ -18,8 +18,8 @@ def em(en):
 sheetsUrl="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
 s=requests.get(sheetsUrl)
 final=s.json()
-print("=======================================================")
-print(final.keys())
+# print("=======================================================")
+# print(final.keys())
 arr=final['values']
 g=[]
 st=1
@@ -31,8 +31,12 @@ for a in range(int(len(arr)/6)):
     l.append("")
     try:
         l.append(arr[fi-1][0])
-    except:
-        print("An exception occurred")
+    except Exception as e:
+        # print(f"Which is {which}")
+        # print(f"o['name' is {o['name']}")
+        # print("an error")
+        print (e)
+        # print("An exception occurred")
     # l.append(arr[fi-1][0])
     l.append(f"{i}")
     l.append("")
@@ -51,8 +55,8 @@ for a in range(int(len(arr)/6)):
     if len(l[0]) > 0:
         g.append(l)
 yk=json.dumps(g,indent=4)
-for each in g:
-    print(each[2])
+# for each in g:
+#     print(each[2])
 
 
 # print(yk[0:945])
