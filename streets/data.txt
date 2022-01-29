@@ -1,9 +1,9 @@
 [
     [
-        "vscoe The Salvation Army Harbor Light Center, Minneapolis",
+        "The Salvation Army Harbor Light Center, Minneapolis",
         "1010 Currie Ave, Minneapolis, MN 55403, USA",
         "(612) 767-3100",
-        "Must be referred through Adult Shelter Connect (above).",
+        "xxxMust be referred through Adult Shelter Connect (above).",
         "Provides: A secure shelter for single homeless women. Shower facilities are available. A light continental breakfast is provided by 2.4 Ministries.",
         "sh",
         "",
@@ -16,24 +16,6 @@
         "",
         "",
         "http://facebook.com/MinneapolisHarborLight"
-    ],
-    [
-        "Minnesota Attorney General's Office ",
-        "651-296-3353 or 1-800-657-3787",
-        "Monday through Friday from 8 am-5 pm.",
-        "",
-        "Provides: Information about housing law and tenant rights to anyone in Minnesota.",
-        "",
-        "",
-        "",
-        "th",
-        "0",
-        "",
-        "Minneapolis, MN",
-        "44.977753",
-        "-93.2650108",
-        "ChIJvbt3k5Azs1IRB-56L4TJn5M",
-        "http://www.ag.state.mn.us/"
     ],
     [
         "Adult Shelter Connect",
@@ -286,24 +268,6 @@
         "",
         "",
         "https://www.esns.org/metrofoodprograms"
-    ],
-    [
-        "Social Security",
-        "1811 Chicago Avenue South",
-        "1-800-772-1213",
-        "M-F 9 am-4:30 pm",
-        "Where to Apply:<br> Social Security Administration<br> 1811 Chicago Avenue South<br> Phone: 1-800-772-1213<br> Hours: Monday through Friday from 9 am-4:30 pm.<br> </ul> Supplemental Security Income (SSI)<br><br> SSI is a federal needs based program providing benefits to anyone who is aged (age 65 or older), blind, or disabled. Disabled under SSI rules means a person has a medically determinable physical or mental impairment, which: results in the inability to do any substantial gainful activity, and has lasted or can be expected to last for a continuous period of not less than 12 months. Substantial gainful activity is defined as the ability to work and earn $1,130 per month. If someone is working, there are ways that could lower the monthly gross wages below $1,130. The Social Security Administration no longer recognizes drug addiction and alcoholism (DA & A) as disabling conditions. Someone with another impairment should still file. If the DA & A does not contribute to the impairment, they could be found to be disabled. Anyone who is disabled, should be encouraged to file for benefits.<br><br>    To determine SSI eligibility and payment amounts, SSA considers the applicant's income and resources. Income could include money earned from work, benefits from other sources, such as; Social Security, worker's compensation, Veterans Affairs, friends or relatives, free food or shelter. Resources are things which a person owns such as; cash, bank accounts, land, vehicles, personal property, life insurance, anything that can be converted to cash and used for food and shelter. There are many exceptions/exclusions regarding income and resources. Anyone that is disabled should be encouraged to file for SSI.<br><br> To be eligible for SSI, an applicant must be a US citizen or one of certain alien categories. There are many categories of lawful aliens that would be eligible for SSI, contact a Social Security Office or the National 800 number 1-800-772-1213 to inquire.<br> <br> Anyone applying for SSI will be asked about their medical history; doctors, tests, and medications. The claim representative (CR) will ask questions about the person's income, resources, and living arrangements. The CR will ask the applicant to attest to the truthfulness of their answers.<br><br> <b>Appeals:</b><br><br> If an application is denied, there is a 65 day appeals period (60 days plus 5 days mailing). If an appeal is requested after 65 days, the applicant must show good cause for late filing of the appeal. If the late appeal is not accepted, a new application can be filed, but there is a potential loss of benefits. The Social Security Office can provide a referral list for free legal services. <br><br> Cooper Law Firm<br> 825 Nicollet Mall, Suite 950, Minneapolis (Medical Arts Bldg.)<br> Phone: 612-353-4769<br> Hours: Call for an appointment. Appointments available at shelters, various locations throughout the Twin Cities, and at their office.<br> Provides: Free attorney assistance filing Social Security applications, reconsiderations and appeals for recipients of GA, MFIP, DWP, and FSS. Sliding fee available for those not on public assistance.<br><br> Salvation Army Center City Office<br> 53 Glenwood Avenue<br> Phone: 612-659-0711 ext. 30<br> Service Area: Minneapolis and West Metro area<br> Provides: If you are unable to work because of a diagnosed disability, staff will assist with applications for Social Security benefits for individuals who are receiving cash assistance from the county (GA, MFIP, RCA).<br>",
-        "",
-        "",
-        "",
-        "ss",
-        "375",
-        "h",
-        "1811 Chicago Avenue South",
-        "",
-        "",
-        "",
-        "www.ssa.gov"
     ],
     [
         "Sharing & Caring Hands",

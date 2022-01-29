@@ -103,7 +103,7 @@ let servicesMenu = {
     sh: "Shelter",
     sw: "Showers",
     th: "Rapid Housing",
-    ph: "Permanent Housing",
+    ph: "Affordable Housing",
     rh: "Rental Housing",
     fu: "Furniture",
     cm: "Case Management"

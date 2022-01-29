@@ -1,5 +1,22 @@
+
+def em(en):
+    struct=""
+    for index, item in enumerate(en):    
+        if index % 7==0:
+          print(index, item)
+          struct+=f"{index} {item} \n"
 import json
 import requests
+sheets='https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json!A1:A50000?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw' 
+r=requests.get(sheets)
+sheetsD=r.json()
+sheetsV=sheetsD['values']
+em(sheetsV)
+
+'''
+sheetsUrl="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
+s=requests.get(sheetsUrl
+final=s.json()
 our_list = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]]
 
 def split(list, no):
@@ -39,7 +56,6 @@ print(chunked_list)
 # Returns: [(1, 2, 3), (4, 5, 6), (7, 8, 9), (10, 11, '')]
 chunked_list = [list(item) for item in list(zip_longest(*[iter(our_list)]*chunk_size, fillvalue=''))]
 print(chunked_list)
-'''
 test_list = ['1','2','3','4','5','6','7','8','9','10'] 
 
 def split_list(lst, n):  
