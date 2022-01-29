@@ -12,7 +12,20 @@ r=requests.get(sheets)
 sheetsD=r.json()
 sheetsV=sheetsD['values']
 em(sheetsV)
-
+import json
+o = json.loads("""[
+    {
+        "ename": "mark",
+        "url": "Lennon.com"
+    },
+    {
+        "ename": "egg",
+        "url": "Lennon.com"
+    }
+]""")
+# kick out the unwanted item from the list
+o = filter(lambda x: x['ename']!="mark", o)
+output_string = json.dumps(o)
 '''
 sheetsUrl="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
 s=requests.get(sheetsUrl

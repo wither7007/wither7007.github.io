@@ -55,7 +55,7 @@ for which in range(len(array)):
         name.append(array[which][3])
         name.append(array[which][4])
         name.append(array[which][5])
-        name.append('')
+        name.append(o['rating'])
         name.append('')
         name.append(array[which][5])
         name.append('0')
