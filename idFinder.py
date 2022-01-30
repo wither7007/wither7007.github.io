@@ -3,6 +3,7 @@ import requests
 import sys
 import re
 import clipboard
+from collections import Counter
 def em(en):
     struct=""
     for index, item in enumerate(en):    
@@ -119,7 +120,7 @@ print(targ)
 final=requests.get(targ)
 finalJ=final.json()
 object = json.dumps(finalJ, indent = 4)
-sys.exit()
+# sys.exit()
 
 
 
@@ -179,4 +180,13 @@ data=json.load(f)
 type(f)
 data
 len(data)
+set1={}
+x=set()
+uList=[]
+for x in array:
+    uList.append(x[8])
+    # print(x[8])
+print(*Counter(uList))
+c=(*Counter(uList))
+clipboard.copy(c)
 '''
