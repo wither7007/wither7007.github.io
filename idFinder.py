@@ -1,5 +1,4 @@
 import json
-ihich=23
 import requests
 import sys
 import re
@@ -33,6 +32,9 @@ fileJ=r"C:\projects\wither7007.github.io\streets\data.json"
 with open(fileJ, 'r') as f:
     array = json.load(f)
 name2=[]
+sheetsUrl="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
+s=requests.get(sheetsUrl)
+final=s.json()
 for which in range(len(array)):
 # for which in range(23,24):
     try:

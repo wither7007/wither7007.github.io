@@ -1,19 +1,27 @@
-
+import sys
+import json
+import requests
 def em(en):
     struct=""
     for index, item in enumerate(en):    
         if index % 7==0:
-          print(index, item)
+          print(index, item, en[index-1], en[index-6])
           struct+=f"{index} {item} \n"
-import json
-import requests
 sheets='https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json!A1:A50000?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw' 
 r=requests.get(sheets)
 sheetsD=r.json()
 sheetsV=sheetsD['values']
 em(sheetsV)
+sys.exit()
+
+
+
+
+
+
+
 import json
-o = json.loads("""[
+o = son.loads("""[
     {
         "ename": "mark",
         "url": "Lennon.com"

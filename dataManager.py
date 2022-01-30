@@ -34,7 +34,8 @@ for a in range(int(len(arr)/6)):
     except Exception as e:
         # print(f"Which is {which}")
         # print(f"o['name' is {o['name']}")
-        # print("an error")
+        print(a)
+        print("an error")
         print (e)
         # print("An exception occurred")
     # l.append(arr[fi-1][0])
