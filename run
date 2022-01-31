@@ -145,9 +145,9 @@ which is: 5
 which is: 6 
  n is: {'formatted_address': '1500 6th St NE, Minneapolis, MN 55413, USA', 'formatted_phone_number': '(612) 788-2444', 'name': 'Little Kitchen Food Shelf', 'place_id': 'ChIJx67_RYkts1IRXXb0O_VnSEQ', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=4920296895872792157', 'user_ratings_total': 33, 'website': 'http://gracenempls.org/service/little-kitchen-food-shelf/'}
 which is: 7 
- n is: {'formatted_address': '2400 Park Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 871-8831', 'name': 'Messiah Lutheran', 'place_id': 'ChIJmRV-oq4ys1IR08OPaKUmkrU', 'rating': 4.3, 'url': 'https://maps.google.com/?cid=13083562359330423763', 'user_ratings_total': 18, 'website': 'http://messiahlutheranmpls.org/'}
+ n is: {'formatted_address': '17805 County Rd 6, Plymouth, MN 55447, USA', 'formatted_phone_number': '(763) 473-6968', 'name': 'Messiah United Methodist Church', 'place_id': 'ChIJV5GYLIhLs1IRn8SNkqB3Ris', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=3118311323537884319', 'user_ratings_total': 19, 'website': 'https://www.messiahchurch.org/'}
 which is: 8 
- n is: {'formatted_address': 'Minneapolis, MN 55415, USA', 'formatted_phone_number': '(612) 770-7660', 'name': 'Turbo Taco', 'place_id': 'ChIJ4by95ZIn9ocRar4yjNRWVpI', 'rating': 4.7, 'url': 'https://maps.google.com/?cid=10544711048419786346', 'user_ratings_total': 23, 'website': 'http://turbotaco.com/'}
+ n is: {'formatted_address': '2520 Hillsboro Ave N, Golden Valley, MN 55427, USA', 'formatted_phone_number': '(763) 404-8190', 'name': "Nong's Thai Cuisine", 'place_id': 'ChIJH82Rosc1s1IROWsGDfhP0DA', 'rating': 4.6, 'url': 'https://maps.google.com/?cid=3517399235765365561', 'user_ratings_total': 1151, 'website': 'http://www.nongsthaicuisine.com/'}
 which is: 9 
  n is: {'formatted_address': '1414 E 48th St, Minneapolis, MN 55417, USA', 'formatted_phone_number': '(612) 825-6933', 'name': 'New Creation Baptist Church', 'place_id': 'ChIJody2p4Ao9ocRlfSp2WAnD8I', 'rating': 5, 'url': 'https://maps.google.com/?cid=13983438664930817173', 'user_ratings_total': 22, 'website': 'https://newcreationbaptistchurchmn.org/'}
 which is: 10 
@@ -185,9 +185,9 @@ my error is: 'reviews'
 which is: 20 
  n is: {'formatted_address': '2323 11th Ave S, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 721-1681', 'name': 'Waite House | Pillsbury United Communities', 'place_id': 'ChIJmyzwVVQts1IRmVG0-izEqOg', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=16764865310350397849', 'user_ratings_total': 18, 'website': 'https://pillsburyunited.org/site/waite-house/'}
 which is: 21 
- n is: {'formatted_address': '4101 W 38th St #102, Sioux Falls, SD 57106, USA', 'formatted_phone_number': '(605) 367-5228', 'name': 'WIC Women Infants & Children', 'place_id': 'ChIJRQwvA321jocRC-RN95fHYx8', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=2261870893373187083', 'user_ratings_total': 56, 'website': 'https://sdwic.org/'}
+ n is: {'formatted_address': '2215 E Lake St, Minneapolis, MN 55407, USA', 'formatted_phone_number': '(612) 348-6100', 'name': 'Hennepin County WIC Office', 'place_id': 'ChIJV_LOfAQo9ocRSZS2dwNs8gk', 'rating': 3.2, 'url': 'https://maps.google.com/?cid=716754052854486089', 'user_ratings_total': 9, 'website': 'http://www.hennepin.us/residents/health-medical/wic-women-infants-children'}
 which is: 22 
- n is: {'formatted_address': 'Chaska, MN 55318, USA', 'formatted_phone_number': '(952) 368-7297', 'name': 'Southwest Metro Animal Rescue', 'place_id': 'ChIJZ9sPm28F9ocRetJHn-FXWuM', 'rating': 4, 'url': 'https://maps.google.com/?cid=16382503221065142906', 'user_ratings_total': 9, 'website': 'http://www.swmetroanimalrescue.org/'}
+ n is: {'formatted_address': '6418 Bass Lake Rd, Crystal, MN 55428, USA', 'formatted_phone_number': '(763) 533-8642', 'name': "Metro Women's Center", 'place_id': 'ChIJKYhdk9o2s1IRO0cotdTpQvQ', 'rating': 4.6, 'url': 'https://maps.google.com/?cid=17600887393498974011', 'user_ratings_total': 20, 'website': 'https://metrowomenscenter.org/'}
 which is: 23 
  n is: {'formatted_address': '215 S 8th St, Minneapolis, MN 55402, USA', 'formatted_phone_number': '(612) 248-2350', 'name': 'Adult Shelter Connect', 'place_id': 'ChIJuyu80pkys1IRyLYXST81oDI', 'rating': 4, 'url': 'https://maps.google.com/?cid=3647974244095604424', 'user_ratings_total': 38, 'website': 'https://www.simpsonhousing.org/adult-shelter-connect-simpson-shelter/'}
 Which is 24
@@ -218,7 +218,7 @@ which is: 34
 which is: 35 
  n is: {'formatted_address': '2634 Russell Ave N, Minneapolis, MN 55411, USA', 'formatted_phone_number': '(612) 521-2128', 'name': "St Anne's Place of Haven Housing", 'place_id': 'ChIJF-IfE7Yzs1IRQjtmf2s9F4g', 'rating': 4.1, 'url': 'https://maps.google.com/?cid=9806374245530745666', 'user_ratings_total': 60, 'website': 'https://www.havenhousing.org/'}
 which is: 36 
- n is: {'formatted_address': '5000 W Broadway Ave, Crystal, MN 55429, USA', 'formatted_phone_number': '(763) 535-8765', 'name': 'Cornerstone Church Crystal', 'place_id': 'ChIJF8e4eSM0s1IRlYwyla2lUvc', 'rating': 4.6, 'url': 'https://maps.google.com/?cid=17821488840409517205', 'user_ratings_total': 37, 'website': 'http://www.cornerstonecrystal.org/'}
+ n is: {'formatted_address': '3901 Vinewood Ln N, Plymouth, MN 55441, USA', 'formatted_phone_number': '(763) 559-5300', 'name': 'Cornerstone Plymouth', 'place_id': 'ChIJ_____49Ls1IRUx0-DgAjh7U', 'rating': 4.3, 'url': 'https://maps.google.com/?cid=13080462125866818899', 'user_ratings_total': 494, 'website': 'https://www.cornerstoneplymouth.com/?utm_source=google&utm_medium=organic&utm_campaign=googlemybusiness'}
 Which is 37
 my error is: list index out of range
 ----------------------------
@@ -233,7 +233,7 @@ which is: 40
 which is: 41 
  n is: {'formatted_address': '1121 E 46th St #3509, Minneapolis, MN 55407, USA', 'formatted_phone_number': '(612) 204-8211', 'name': 'Hope Street Shelter', 'place_id': 'ChIJTTwunNUn9ocRWutoVIb4sBM', 'rating': 4, 'url': 'https://maps.google.com/?cid=1418907138447174490', 'user_ratings_total': 42, 'website': 'https://www.cctwincities.org/hopestreet/'}
 which is: 42 
- n is: {'formatted_address': '420 S 15th Ave, Minneapolis, MN 55454, USA', 'formatted_phone_number': '(612) 338-5282', 'name': 'Brian Coyle Neighborhood Center | Pillsbury United Communities', 'place_id': 'ChIJ68xsxUIts1IRSKkIVwKHKKI', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=11684737677332621640', 'user_ratings_total': 42, 'website': 'https://pillsburyunited.org/site/brian-coyle/'}
+ n is: {'formatted_address': '3650 N Fremont Ave, Minneapolis, MN 55412, USA', 'formatted_phone_number': '(612) 302-3400', 'name': 'Pillsbury United Communities | Executive Office', 'place_id': 'ChIJwcyND2Yys1IRaHUzcXML-E8', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=5762368313668892008', 'user_ratings_total': 11, 'website': 'http://www.pillsburyunited.org/'}
 which is: 43 
  n is: {'formatted_address': '740 E 17th St, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 204-8300', 'name': 'Catholic Charities Opportunity Center', 'place_id': 'ChIJ8cSO3aYys1IRp3k9BFuCMDc', 'rating': 4.1, 'url': 'https://maps.google.com/?cid=3976821798392920487', 'user_ratings_total': 215, 'website': 'https://www.cctwincities.org/locations/opportunity-center/'}
 which is: 44 
@@ -257,7 +257,7 @@ which is: 52
 which is: 53 
  n is: {'formatted_address': '1901 Nicollet Ave, Minneapolis, MN 55403, USA', 'formatted_phone_number': '(612) 871-8305', 'name': 'Old School by Steeple People', 'place_id': 'ChIJW9FyQRgzs1IRDsIxsx5ei4E', 'rating': 4.8, 'url': 'https://maps.google.com/?cid=9334658138603897358', 'user_ratings_total': 29, 'website': 'https://www.oldschoolthrifty.org/'}
 which is: 54 
- n is: {'formatted_address': '2939 12th Ave S, Minneapolis, MN 55407, USA', 'formatted_phone_number': '(612) 722-7882', 'name': 'St. Vincent de Paul Thrift Store', 'place_id': 'ChIJzV_vTAco9ocR9upDX3JLGEA', 'rating': 4.5, 'url': 'https://maps.google.com/?cid=4618524372465085174', 'user_ratings_total': 136, 'website': 'http://www.svdpmpls.org/'}
+ n is: {'formatted_address': '9100 93rd Ave N, Brooklyn Park, MN 55445, USA', 'formatted_phone_number': '(763) 425-2210', 'name': 'St. Vincent De Paul Catholic Church', 'place_id': 'ChIJWd-dnbM5s1IRr2SM7TY41Eg', 'rating': 4.5, 'url': 'https://maps.google.com/?cid=5247881274358260911', 'user_ratings_total': 41, 'website': 'http://www.saintvdp.org/?y_source=1_MjI0ODc0Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D'}
 which is: 55 
  n is: {'formatted_address': '900 N 4th St, Minneapolis, MN 55401, USA', 'formatted_phone_number': '(612) 547-8912', 'name': 'The Salvation Army Family Store & Donation Center', 'place_id': 'ChIJ2_0p2Yoys1IREAHiKi-4Ugw', 'rating': 3.1, 'url': 'https://maps.google.com/?cid=887974589267837200', 'user_ratings_total': 73, 'website': 'http://satruck.org/'}
 which is: 56 
@@ -279,7 +279,7 @@ which is: 63
 which is: 64 
  n is: {'formatted_address': '1112 E Franklin Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 870-9617', 'name': 'Marie Sandvik Center', 'place_id': 'ChIJaUV2iVcts1IRPivK-pyqgmU', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=7314596336002280254', 'user_ratings_total': 15, 'website': 'http://mariesandvikcenter.org/'}
 which is: 65 
- n is: {'formatted_address': '2400 Park Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 871-8831', 'name': 'Messiah Lutheran', 'place_id': 'ChIJmRV-oq4ys1IR08OPaKUmkrU', 'rating': 4.3, 'url': 'https://maps.google.com/?cid=13083562359330423763', 'user_ratings_total': 18, 'website': 'http://messiahlutheranmpls.org/'}
+ n is: {'formatted_address': '17805 County Rd 6, Plymouth, MN 55447, USA', 'formatted_phone_number': '(763) 473-6968', 'name': 'Messiah United Methodist Church', 'place_id': 'ChIJV5GYLIhLs1IRn8SNkqB3Ris', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=3118311323537884319', 'user_ratings_total': 19, 'website': 'https://www.messiahchurch.org/'}
 which is: 66 
  n is: {'formatted_address': '1816 Portland Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 870-7263', 'name': 'Peace House Community', 'place_id': 'ChIJ7YzZTe1TVEARdNL81908Lp8', 'rating': 4.1, 'url': 'https://maps.google.com/?cid=11470172224468341364', 'user_ratings_total': 35, 'website': 'http://www.peacehousecommunity.org/'}
 Which is 67
@@ -345,11 +345,8 @@ which is: 86
  n is: {'formatted_address': '1900 Nicollet Ave, Minneapolis, MN 55403, USA', 'formatted_phone_number': '(612) 871-7400', 'name': 'Plymouth Congregational Church', 'place_id': 'ChIJd9ngQbgys1IR--RVyZHn93Q', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=8428459840981296379', 'user_ratings_total': 56, 'website': 'http://www.plymouth.org/'}
 which is: 87 
  n is: {'formatted_address': '1200 S Marquette Ave, Minneapolis, MN 55403, USA', 'formatted_phone_number': '(612) 332-3421', 'name': 'Westminster Presbyterian Church', 'place_id': 'ChIJAeZu_L0ys1IRZPM-jy_6qnM', 'rating': 4.5, 'url': 'https://maps.google.com/?cid=8334749142576198500', 'user_ratings_total': 95, 'website': 'http://www.westminstermpls.org/'}
-Which is 88
-my error is: 'reviews'
-----------------------------
-
-
+which is: 88 
+ n is: {'formatted_address': '1803 N Bryant Ave, Minneapolis, MN 55411, USA', 'formatted_phone_number': '(612) 588-0861', 'name': 'Haven Housing', 'place_id': 'ChIJ65Zh41oys1IR2P607YOifGg', 'rating': 4.3, 'url': 'https://maps.google.com/?cid=7529071364569104088', 'user_ratings_total': 30, 'website': 'https://www.havenhousing.org/'}
 Which is 89
 my error is: 'website'
 ----------------------------
@@ -391,14 +388,14 @@ my error is: 'website'
 
 
 which is: 103 
- n is: {'formatted_address': 'Chaska, MN 55318, USA', 'formatted_phone_number': '(952) 368-7297', 'name': 'Southwest Metro Animal Rescue', 'place_id': 'ChIJZ9sPm28F9ocRetJHn-FXWuM', 'rating': 4, 'url': 'https://maps.google.com/?cid=16382503221065142906', 'user_ratings_total': 9, 'website': 'http://www.swmetroanimalrescue.org/'}
+ n is: {'formatted_address': '6418 Bass Lake Rd, Crystal, MN 55428, USA', 'formatted_phone_number': '(763) 533-8642', 'name': "Metro Women's Center", 'place_id': 'ChIJKYhdk9o2s1IRO0cotdTpQvQ', 'rating': 4.6, 'url': 'https://maps.google.com/?cid=17600887393498974011', 'user_ratings_total': 20, 'website': 'https://metrowomenscenter.org/'}
 Which is 104
 my error is: 'website'
 ----------------------------
 
 
 which is: 105 
- n is: {'formatted_address': '11 E Kellogg Blvd, St Paul, MN 55101, USA', 'formatted_phone_number': '(651) 292-1900', 'name': 'InterContinental Saint Paul Riverfront, an IHG Hotel', 'place_id': 'ChIJOR4jq07V94cR-0hm6rn0d44', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=10265942954953033979', 'user_ratings_total': 1717, 'website': 'https://www.ihg.com/intercontinental/hotels/us/en/st-paul/mspsp/hoteldetail?cm_mmc=GoogleMaps-_-IC-_-US-_-MSPSP'}
+ n is: {'formatted_address': '3131 Campus Dr, Plymouth, MN 55441, USA', 'formatted_phone_number': '(763) 559-6600', 'name': 'Crowne Plaza Minneapolis West, an IHG Hotel', 'place_id': 'ChIJMRMgnSNKs1IRLnnd_U85mBE', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=1267826310829144366', 'user_ratings_total': 1293, 'website': 'https://www.ihg.com/hotels/us/en/plymouth/msppm/hoteldetail?cm_mmc=GoogleMaps-_-CP-_-US-_-MSPPM'}
 which is: 106 
  n is: {'formatted_address': '706 N 1st Ave, Minneapolis, MN 55403, USA', 'formatted_phone_number': '(612) 376-7661', 'name': 'Lamoreaux Apartments', 'place_id': 'ChIJ8UBK1JMys1IRrIwj5AmtWeI', 'rating': 4, 'url': 'https://maps.google.com/?cid=16310257783492807852', 'user_ratings_total': 1, 'website': 'https://lamoreaux.aeon.org/'}
 Which is 107
@@ -469,7 +466,7 @@ which is: 134
 which is: 135 
  n is: {'formatted_address': '2309 Nicollet Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 874-0311', 'name': "St. Stephen's Human Services", 'place_id': 'ChIJU8k3U7Ays1IRVgd8F4r22uo', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=16923109622757984086', 'user_ratings_total': 182, 'website': 'http://www.ststephensmpls.org/'}
 which is: 136 
- n is: {'formatted_address': '900 N 4th St, Minneapolis, MN 55401, USA', 'formatted_phone_number': '(612) 547-8912', 'name': 'The Salvation Army Family Store & Donation Center', 'place_id': 'ChIJ2_0p2Yoys1IREAHiKi-4Ugw', 'rating': 3.1, 'url': 'https://maps.google.com/?cid=887974589267837200', 'user_ratings_total': 73, 'website': 'http://satruck.org/'}
+ n is: {'formatted_address': '2024 N Lyndale Ave, Minneapolis, MN 55411, USA', 'formatted_phone_number': '(612) 522-6581', 'name': 'Salvation Army', 'place_id': 'ChIJrb9LNkMys1IRQzwcCjcPtlg', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=6392313450166238275', 'user_ratings_total': 99, 'website': 'https://centralusa.salvationarmy.org/twin-cities/'}
 which is: 137 
  n is: {'formatted_address': '333 S 12th St, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 870-4416', 'name': 'Central Lutheran Church', 'place_id': 'ChIJUd2t0Lwys1IR8BzXoiwANJ0', 'rating': 4.6, 'url': 'https://maps.google.com/?cid=11327679154454207728', 'user_ratings_total': 93, 'website': 'http://www.centralmpls.org/'}
 which is: 138 
@@ -481,7 +478,7 @@ which is: 140
 which is: 141 
  n is: {'formatted_address': '1213 E Franklin Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 872-8086', 'name': 'Native American Community Clinic', 'place_id': 'ChIJy9wkglcts1IRXC5VZrPapMk', 'rating': 4.1, 'url': 'https://maps.google.com/?cid=14529978761854922332', 'user_ratings_total': 29, 'website': 'http://nacc-healthcare.org/'}
 which is: 142 
- n is: {'formatted_address': '2301 NE Central Ave, Minneapolis, MN 55418, USA', 'formatted_phone_number': '(612) 588-9411', 'name': 'Central Clinic - Neighborhood HealthSource', 'place_id': 'ChIJtwkxnOkts1IRuUEV8621GhY', 'rating': 3.5, 'url': 'https://maps.google.com/?cid=1592785176941117881', 'user_ratings_total': 24, 'website': 'http://neighborhoodhealthsource.org/'}
+ n is: {'formatted_address': '6300 Walker St, Minneapolis, MN 55416, USA', 'formatted_phone_number': '(952) 993-1100', 'name': 'Park Nicollet Central Community Clinic', 'place_id': 'ChIJD3R31pcg9ocRb1ri8WM_Nd0', 'rating': 3.7, 'url': 'https://maps.google.com/?cid=15939716154640194159', 'user_ratings_total': 3, 'website': 'https://intranet.healthpartners.com/CommunityClinics/Pages/Central.aspx'}
 which is: 143 
  n is: {'formatted_address': '3300 N Fremont Ave, Minneapolis, MN 55412, USA', 'formatted_phone_number': '(612) 588-9411', 'name': 'Fremont Clinic-Neighborhood HealthSource', 'place_id': 'ChIJXz1yezoys1IRMqtvQ6Nczzc', 'rating': 2.9, 'url': 'https://maps.google.com/?cid=4021534848545958706', 'user_ratings_total': 19, 'website': 'http://www.neighborhoodhealthsource.org/'}
 which is: 144 
@@ -528,7 +525,7 @@ my error is: 'reviews'
 
 
 which is: 164 
- n is: {'formatted_address': '2301 NE Central Ave, Minneapolis, MN 55418, USA', 'formatted_phone_number': '(612) 588-9411', 'name': 'Central Clinic - Neighborhood HealthSource', 'place_id': 'ChIJtwkxnOkts1IRuUEV8621GhY', 'rating': 3.5, 'url': 'https://maps.google.com/?cid=1592785176941117881', 'user_ratings_total': 24, 'website': 'http://neighborhoodhealthsource.org/'}
+ n is: {'formatted_address': '6300 Walker St, Minneapolis, MN 55416, USA', 'formatted_phone_number': '(952) 993-1100', 'name': 'Park Nicollet Central Community Clinic', 'place_id': 'ChIJD3R31pcg9ocRb1ri8WM_Nd0', 'rating': 3.7, 'url': 'https://maps.google.com/?cid=15939716154640194159', 'user_ratings_total': 3, 'website': 'https://intranet.healthpartners.com/CommunityClinics/Pages/Central.aspx'}
 which is: 165 
  n is: {'formatted_address': '3300 N Fremont Ave, Minneapolis, MN 55412, USA', 'formatted_phone_number': '(612) 588-9411', 'name': 'Fremont Clinic-Neighborhood HealthSource', 'place_id': 'ChIJXz1yezoys1IRMqtvQ6Nczzc', 'rating': 2.9, 'url': 'https://maps.google.com/?cid=4021534848545958706', 'user_ratings_total': 19, 'website': 'http://www.neighborhoodhealthsource.org/'}
 which is: 166 
@@ -560,8 +557,11 @@ which is: 177
  n is: {'formatted_address': '1315 E 24th St, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 721-9800', 'name': 'Indian Health Board Medical & Dental Center', 'place_id': 'ChIJcdBCmFYts1IRxuB2TibI47Y', 'rating': 4.2, 'url': 'https://maps.google.com/?cid=13178597001466929350', 'user_ratings_total': 65, 'website': 'https://www.indianhealthboard.com/'}
 which is: 178 
  n is: {'formatted_address': '2855 Anthony Ln S #115, St Anthony, MN 55418, USA', 'formatted_phone_number': '(612) 379-1199', 'name': 'Love Lines Crisis Center', 'place_id': 'ChIJjfW2mzwss1IRKpSUknV0UXA', 'rating': 5, 'url': 'https://maps.google.com/?cid=8093378053680698410', 'user_ratings_total': 1, 'website': 'http://suicidehelplines.org/'}
-which is: 179 
- n is: {'formatted_address': '2400 Park Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 871-0221', 'name': 'Lutheran Social Service of Minnesota', 'place_id': 'ChIJVZJYvq4ys1IRN-VDKbgdi60', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=12505121467127817527', 'user_ratings_total': 85, 'website': 'http://www.lssmn.org/'}
+Which is 179
+my error is: 'reviews'
+----------------------------
+
+
 which is: 180 
  n is: {'formatted_address': '1213 E Franklin Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 872-8086', 'name': 'Native American Community Clinic', 'place_id': 'ChIJy9wkglcts1IRXC5VZrPapMk', 'rating': 4.1, 'url': 'https://maps.google.com/?cid=14529978761854922332', 'user_ratings_total': 29, 'website': 'http://nacc-healthcare.org/'}
 which is: 181 
@@ -572,11 +572,8 @@ which is: 183
  n is: {'formatted_address': 'All services by phone or computer only, 2421 Chicago Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 870-0565', 'name': 'Walk-In Counseling Center', 'place_id': 'ChIJCQqSYqkys1IRZBSy-t0yGhc', 'rating': 4.4, 'url': 'https://maps.google.com/?cid=1664698941241955428', 'user_ratings_total': 22, 'website': 'https://walkin.org/'}
 which is: 184 
  n is: {'formatted_address': '1170 15th Ave SE, Minneapolis, MN 55414, USA', 'formatted_phone_number': '(612) 230-6270', 'name': 'People Incorporated', 'place_id': 'ChIJF13mSagts1IRaqbJfmxMyBc', 'rating': 3, 'url': 'https://maps.google.com/?cid=1713703687081797226', 'user_ratings_total': 2, 'website': 'http://peopleincorporated.org/'}
-Which is 185
-my error is: 'reviews'
-----------------------------
-
-
+which is: 185 
+ n is: {'formatted_address': '7000 57th Ave N #100, Crystal, MN 55428, USA', 'formatted_phone_number': '(612) 752-8300', 'name': 'Avivo Community Support Program', 'place_id': 'ChIJa3s0s902s1IRRtDH3_pl0Lg', 'rating': 3, 'url': 'https://maps.google.com/?cid=13317256226305200198', 'user_ratings_total': 2, 'website': 'http://www.avivomn.org/'}
 Which is 186
 my error is: 'website'
 ----------------------------
@@ -587,7 +584,12 @@ which is: 187
 which is: 188 
  n is: {'formatted_address': '1412 W 36th St, Minneapolis, MN 55408, USA', 'formatted_phone_number': '(612) 824-8061', 'name': 'Vail Place Uptown Clubhouse', 'place_id': 'ChIJf3_TD54n9ocRWVQ_jxhry78', 'rating': 4.8, 'url': 'https://maps.google.com/?cid=13820257634743178329', 'user_ratings_total': 4, 'website': 'http://www.vailplace.org/'}
 which is: 189 
- n is: {'formatted_address': '2218 1st Ave S, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 871-2218', 'name': 'Alcoholics Anonymous', 'place_id': 'ChIJ6cnQqrcys1IRINT7WKUTGn0', 'rating': 4.7, 'url': 'https://maps.google.com/?cid=9014539205018899488', 'user_ratings_total': 19, 'website': 'http://www.2218alano.com/'}
+ n is: {'formatted_address': '4055 Regent Ave N, Robbinsdale, MN 55422, USA', 'name': 'Alcoholics Anonymous', 'place_id': 'ChIJIajfaVQxs1IRNpFGbCRNF54', 'rating': 3, 'url': 'https://maps.google.com/?cid=11391658601287684406', 'user_ratings_total': 2, 'website': 'http://www.aa.org/'}
+Which is 189
+my error is: 'formatted_phone_number'
+----------------------------
+
+
 which is: 190 
  n is: {'formatted_address': '1900 Chicago Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 752-8000', 'name': 'Avivo', 'place_id': 'ChIJkyutOKYys1IRjz_vnT_e0Xs', 'rating': 2.9, 'url': 'https://maps.google.com/?cid=8922156701611671439', 'user_ratings_total': 34, 'website': 'http://www.avivomn.org/'}
 which is: 191 
@@ -665,8 +667,11 @@ which is: 222
  n is: {'formatted_address': '1925 Chicago Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 872-3626', 'name': 'Loring Nicollet School', 'place_id': 'ChIJKWghMLgys1IRSXrNU2TYvvw', 'rating': 5, 'url': 'https://maps.google.com/?cid=18212231868547168841', 'user_ratings_total': 4, 'website': 'http://www.ppl-inc.org/'}
 which is: 223 
  n is: {'formatted_address': '3345 Chicago Ave, Minneapolis, MN 55407, USA', 'formatted_phone_number': '(612) 668-3700', 'name': 'MPS New Families Center.', 'place_id': 'ChIJSYwToOMn9ocR9A9EZyhmVxQ', 'rating': 4, 'url': 'https://maps.google.com/?cid=1465752527449624564', 'user_ratings_total': 7, 'website': 'http://engagement.mpls.k12.mn.us/new_families_center_2'}
-which is: 224 
- n is: {'formatted_address': '2102 University Ave W, St Paul, MN 55114, USA', 'formatted_phone_number': '(651) 632-3700', 'name': 'Student Placement', 'place_id': 'ChIJ3yQR5q0ss1IRUtLQzqhhMo8', 'rating': 3.5, 'url': 'https://maps.google.com/?cid=10318417073911419474', 'user_ratings_total': 31, 'website': 'https://apply.spps.org/'}
+Which is 224
+my error is: 'reviews'
+----------------------------
+
+
 which is: 225 
  n is: {'formatted_address': '41 N 12th St, Minneapolis, MN 55403, USA', 'formatted_phone_number': '(612) 252-1200', 'name': 'YouthLink', 'place_id': 'ChIJjW3Qpuwys1IRX7f-AQ3R7Ow', 'rating': 3.8, 'url': 'https://maps.google.com/?cid=17072250141252958047', 'user_ratings_total': 26, 'website': 'http://www.youthlinkmn.org/'}
 which is: 226 
@@ -688,7 +693,7 @@ which is: 233
 which is: 234 
  n is: {'formatted_address': '1530 E Franklin Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 879-1700', 'name': 'Minneapolis American Indian Center', 'place_id': 'ChIJ5w8xeFots1IR7y1nXr6yI1w', 'rating': 4.6, 'url': 'https://maps.google.com/?cid=6639346806371593711', 'user_ratings_total': 190, 'website': 'http://www.maicnet.org/'}
 which is: 235 
- n is: {'formatted_address': '777 E Lake St, Minneapolis, MN 55407, USA', 'formatted_phone_number': '(651) 539-4410', 'name': 'CareerForce in Minneapolis South', 'place_id': 'ChIJ6w8QCPwn9ocRLXTAe31I7pE', 'rating': 4.3, 'url': 'https://maps.google.com/?cid=10515421883741008941', 'user_ratings_total': 18, 'website': 'https://www.careerforcemn.com/minneapolissouth'}
+ n is: {'formatted_address': '7225 Northland Dr N #100, Brooklyn Park, MN 55428, USA', 'formatted_phone_number': '(763) 279-4400', 'name': 'CareerForce in Brooklyn Park', 'place_id': 'ChIJrRvSsZ43s1IRiQfN8NIZhbY', 'rating': 3.9, 'url': 'https://maps.google.com/?cid=13151946680579196809', 'user_ratings_total': 12, 'website': 'https://www.careerforcemn.com/brooklynpark'}
 which is: 236 
  n is: {'formatted_address': '1021 E Franklin Ave, Minneapolis, MN 55404, USA', 'formatted_phone_number': '(612) 455-5300', 'name': 'Project for Pride In Living Career Center', 'place_id': 'ChIJXySYplcts1IRcQU6NMj8TXg', 'rating': 5, 'url': 'https://maps.google.com/?cid=8668862794557949297', 'user_ratings_total': 1, 'website': 'https://www.ppl-inc.org/career-readiness-programs'}
 Which is 237
@@ -750,7 +755,7 @@ which is: 261
 which is: 262 
  n is: {'formatted_address': '1000 University Ave W Ste 110, St Paul, MN 55104, USA', 'formatted_phone_number': '(612) 726-1327', 'name': 'Minnesota Assistance Council for Veterans (MACV)', 'place_id': 'ChIJeUemDSQo9ocROCsUHFW6xYM', 'rating': 4.9, 'url': 'https://maps.google.com/?cid=9495200264086629176', 'user_ratings_total': 10, 'website': 'https://www.mac-v.org/'}
 which is: 263 
- n is: {'formatted_address': '300 South 6th St, Minneapolis, MN 55487, USA', 'formatted_phone_number': '(612) 348-3300', 'name': 'Hennepin County Veterans Services', 'place_id': 'ChIJ9_kPt58ys1IRpXQlZSQVSVk', 'rating': 3.4, 'url': 'https://maps.google.com/?cid=6433696788735423653', 'user_ratings_total': 10, 'website': 'http://www.hennepinattorney.org/'}
+ n is: {'formatted_address': '1 Veterans Dr, Minneapolis, MN 55417, USA', 'formatted_phone_number': '(612) 970-5662', 'name': 'US Veterans Affairs Department', 'place_id': 'ChIJgSU5jhYp9ocRdym1hq5cWsY', 'rating': 3, 'url': 'https://maps.google.com/?cid=14292838272067774839', 'user_ratings_total': 4, 'website': 'https://www.va.gov/'}
 which is: 264 
  n is: {'formatted_address': '1 Veterans Dr, Minneapolis, MN 55417, USA', 'formatted_phone_number': '(612) 970-5662', 'name': 'US Veterans Affairs Department', 'place_id': 'ChIJgSU5jhYp9ocRdym1hq5cWsY', 'rating': 3, 'url': 'https://maps.google.com/?cid=14292838272067774839', 'user_ratings_total': 4, 'website': 'https://www.va.gov/'}
 which is: 265 
