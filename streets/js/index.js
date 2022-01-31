@@ -223,6 +223,7 @@ function mapper(aPlaces) {
                         Phone: ${f[2]} <br>
                         Hours: ${f[3]} <br>
                         Remarks: ${f[4]} <br>
+                        Google rating: ${f[6]} <br>
                         <a class="myButton" style="margin-top:20px;" href="https://www.google.com/maps/search/?api=1&query=${f[0].replace(
           /\s+/g,
           "+"
