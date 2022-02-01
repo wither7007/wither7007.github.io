@@ -62,6 +62,6 @@ yk=json.dumps(g,indent=4)
 
 # print(yk[0:945])
 clipboard.copy(yk)
-file2 = open(r"C:\projects\wither7007.github.io\streets\datax.json","w+")
+file2 = open(r"C:\projects\wither7007.github.io\streets\data.json","w+")
 file2.write(str(yk))
 file2.close()
