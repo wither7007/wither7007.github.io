@@ -17,20 +17,20 @@ def em(en):
 # print(response.status_code)     # To print http response code  
 # print(response.text)            # To print formatted JSON response 
 
-filename="C:\projects\wither7007.github.io\json\data.json"
+filename="C:\projects\wither7007.github.io\streets\data.json"
 with open(filename) as f:
    data = json.load(f)
 print(data)
-filenameX="C:\projects\wither7007.github.io\json\extend.json"
+filenameX="C:\projects\wither7007.github.io\streets\extend.json"
 with open(filenameX) as f:
    dataX = json.load(f)
 print(dataX)
-newItem=["i am item next"]
 data.append(dataX[0])
 print(data)
 dum=json.dumps(data, indent=4, separators=(',', ': '))
-hope=open("home","w+")
+hope=open(filename,"w+")
 hope.write(str(dum))
+
 hope.close()
 datajl = json.load(data)
 dum=json.dumps(data, indent=4, separators=(',', ': '))
