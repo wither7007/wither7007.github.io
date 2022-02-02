@@ -25,7 +25,7 @@ filenameX="C:\projects\wither7007.github.io\streets\extend.json"
 with open(filenameX) as f:
    dataX = json.load(f)
 print(dataX)
-data.append(dataX[0])
+data.append(dataX[7])
 print(data)
 dum=json.dumps(data, indent=4, separators=(',', ': '))
 hope=open(filename,"w+")
