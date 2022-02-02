@@ -24,9 +24,9 @@ print(data)
 filenameX="C:\projects\wither7007.github.io\json\extend.json"
 with open(filenameX) as f:
    dataX = json.load(f)
-print(data)
+print(dataX)
 newItem=["i am item next"]
-data.append(newItem)
+data.append(dataX[0])
 print(data)
 dum=json.dumps(data, indent=4, separators=(',', ': '))
 hope=open("home","w+")

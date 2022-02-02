@@ -62,7 +62,6 @@ let serviceConvert = {
   sw: "Showers",
   th: "Rapid Rehousing",
   ph: "Permanent Housing",
-  rh: "Rental Housing",
   fu: "Furniture",
   cm: "Case Management",
   ea: "Energy Assitance",
@@ -104,7 +103,6 @@ let servicesMenu = {
     sw: "Showers",
     th: "Rapid Housing",
     ph: "Affordable Housing",
-    rh: "Rental Housing",
     fu: "Furniture",
     cm: "Case Management"
   },
