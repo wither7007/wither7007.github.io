@@ -1,17 +1,68 @@
 import sys
 import json
 import requests
+import clipboard
+import numpy as np
+cats=[]
+cats6=[]
+catsCat=[] 
+# function to get unique values
+def uniqueN(list1):
+    x = np.array(list1)
+    print(np.unique(x))
+    return(np.unique(x)) 
 def em(en):
     struct=""
     for index, item in enumerate(en):    
         if index % 7==0:
-          print(index, item, en[index-1], en[index-6])
+        #   print(index, item, en[index-1], en[index-6])
           struct+=f"{index} {item} \n"
+          cats.append(item)
+          cats6.append(en[index-6])
+          catsCat.append(en[index-1])
+          
+        
+def unique(list1):
+ 
+    # initialize a null list
+    unique_list = []
+     
+    # traverse for all elements
+    for x in list1:
+        # check if exists in unique_list or not
+        if x not in unique_list:
+            unique_list.append(x)
+    # print list
+    for x in unique_list:
+        print(x) ,
 sheets='https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json!A1:A50000?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw' 
 r=requests.get(sheets)
 sheetsD=r.json()
 sheetsV=sheetsD['values']
 em(sheetsV)
+fn=uniqueN(cats6)
+clipboard.copy(str(cats6.sort()))
+import json
+ 
+ 
+# function to add to JSON
+def write_json(new_data, filename='data.json'):
+    with open(filename,'r+') as file:
+          # First we load existing data into a dict.
+        file_data = json.load(file)
+        # Join new_data with file_data inside emp_details
+        file_data["emp_details"].append(new_data)
+        # Sets file's current position at offset.
+        file.seek(0)
+        # convert back to json.
+        json.dump(file_data, file, indent = 4)
+    # python object to be appended
+y = {"emp_name":"Nikhil",
+     "email": "nikhil@geeksforgeeks.org",
+     "job_profile": "Full Time"
+    }
+     
+write_json(y)
 sys.exit()
 
 
