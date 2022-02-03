@@ -9,7 +9,7 @@ def uniqueN(list1):
     return(np.unique(x)) 
 def em(en):
     struct=""
-    for index, item in enumerate(en):    
+    for index, item in enumerate(en):   
         print(index,item)
 
 # url = 'https://jsonplaceholder.typicode.com/todos/1' 
@@ -17,7 +17,7 @@ def em(en):
 # print(response.status_code)     # To print http response code  
 # print(response.text)            # To print formatted JSON response 
 
-filename="C:\projects\wither7007.github.io\json\data.json"
+filename="C:\projects\wither7007.github.io\streets\data.json"
 with open(filename) as f:
    data = json.load(f)
 print(data)
@@ -25,13 +25,15 @@ filenameX="C:\projects\wither7007.github.io\json\extend.json"
 with open(filenameX) as f:
    dataX = json.load(f)
 print(dataX)
-newItem=["i am item next"]
-data.append(dataX[0])
-print(data)
-dum=json.dumps(data, indent=4, separators=(',', ': '))
-hope=open("home","w+")
-hope.write(str(dum))
+for n in range(8):
+    data.append(dataX[n])
+    # print(data)
+    dum=json.dumps(data, indent=4, separators=(',', ': '))
+    hope=open("home","w+")
+    hope.write(str(dum))
 hope.close()
+    
+sys.exit()
 datajl = json.load(data)
 dum=json.dumps(data, indent=4, separators=(',', ': '))
 type(dum)
