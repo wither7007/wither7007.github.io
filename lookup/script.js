@@ -29,6 +29,7 @@ const searchStates = async searchText => {
     fName = values.filter(p => p[0] == searchText)
     matchList.innerHTML = fName[0][1]
     console.log("fname is: ", fName)
+    outputHTML(fName)
     // debugger
     // let matches = states.filter(state => {
     //     const regex = new RegExp(`^${searchText}`, 'gi')
