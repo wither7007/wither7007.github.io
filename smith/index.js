@@ -27,15 +27,20 @@ function ObjtoHtml(xy) {
             <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}"
           aria-expanded="true" aria-controls="collapseOne">
           ${moment().add(i, 'days').format('dddd MMMM Do')}
         </button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+      <div id="collapse${i}" class="accordion-collapse collapse " aria-labelledby="headingOne"
         data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          ${a}
+          ${a[0]}
+          <br>
+         ${a[1]}
+         <br>
+         ${a[2]}
+          <hr>
         </div>
       </div>
     </div>
