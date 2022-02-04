@@ -1,4 +1,6 @@
-
+var age = 26;
+var beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage); // "Beer"
 var now = moment();
 var html = ""
 // console.log("moment date", now.format('dddd MMMM Do'));
@@ -32,9 +34,11 @@ function ObjtoHtml(xy) {
           ${moment().add(i, 'days').format('dddd MMMM Do')}
         </button>
       </h2>
-      <div id="collapse${i}" class="accordion-collapse collapse " aria-labelledby="headingOne"
+      <div id="collapse${i}" class="accordion-collapse collapse ${i == 0 ? 'show' : ''} 
+      " aria-labelledby="headingOne"
         data-bs-parent="#accordionExample">
         <div class="accordion-body">
+        
           ${a[0]}
           <br>
          ${a[1]}
