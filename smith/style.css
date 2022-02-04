@@ -1,5 +1,9 @@
 body { 
     margin-top: 2rem;
+    background-image: url('menu.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 @media (max-width:575px) {
     .display-4 {
