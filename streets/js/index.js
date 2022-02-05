@@ -55,7 +55,8 @@ function showWeather(resp) {
   row.innerHTML = weather
 }
 let serviceConvert = {
-  cc: "Clothes Closet",
+  ch: "Crisis Hotline",
+  cc: "Xlothes Closet",
   me: "Meals",
   fs: "Food Shelfs",
   sh: "Shelter",
@@ -96,7 +97,8 @@ let serviceConvert = {
 //services for menu should be import
 let servicesMenu = {
   Essentials: {
-    cc: "Clothes Closet",
+    ch: "Hotlines/Emergency Phones",
+    cc: "Klothes Closet",
     me: "Meals",
     fs: "Food Shelf",
     sh: "Shelter",
