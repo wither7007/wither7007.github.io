@@ -1,3 +1,4 @@
+#important appends extend to home
 import sys
 import json
 import requests
@@ -21,10 +22,12 @@ filename="C:\projects\wither7007.github.io\streets\data.json"
 with open(filename) as f:
    data = json.load(f)
 print(data)
-filenameX="C:\projects\wither7007.github.io\json\extend.json"
+filenameX="C:\projects\wither7007.github.io\streets\extend.json"
 with open(filenameX) as f:
    dataX = json.load(f)
 print(dataX)
+#change to length of extend.json
+
 for n in range(8):
     data.append(dataX[n])
     # print(data)
