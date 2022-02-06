@@ -4,6 +4,8 @@ import re
 import json
 import itertools
 import sys
+outputFile="dataX"
+spreadTab="st"
 def phone(number):
     pPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), number)
     # print(pPhone)
@@ -15,12 +17,13 @@ def em(en):
         struct+=f"{index} {item} \n"
     clipboard.copy(struct)
 
-sheetsUrl="https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
+sheetsUrl=f"https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/{spreadTab}?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
 s=requests.get(sheetsUrl)
 final=s.json()
 # print("=======================================================")
 # print(final.keys())
 arr=final['values']
+# sys.exit()
 g=[]
 st=1
 fi=7
@@ -62,6 +65,7 @@ yk=json.dumps(g,indent=4)
 
 # print(yk[0:945])
 clipboard.copy(yk)
-file2 = open(r"C:\projects\wither7007.github.io\streets\data.json","w+")
+fileF=f"C:\projects\wither7007.github.io\streets\{outputFile}.json"
+file2 = open(fileF, "w+")
 file2.write(str(yk))
 file2.close()
