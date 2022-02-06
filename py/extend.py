@@ -18,6 +18,7 @@ def em(en):
 # print(response.status_code)     # To print http response code  
 # print(response.text)            # To print formatted JSON response 
 
+
 filename="C:\projects\wither7007.github.io\streets\data.json"
 with open(filename) as f:
    data = json.load(f)
@@ -27,8 +28,8 @@ with open(filenameX) as f:
    dataX = json.load(f)
 print(dataX)
 #change to length of extend.json
-
-for n in range(8):
+eRange=len(dataX)
+for n in range(eRange):
     data.append(dataX[n])
     # print(data)
     dum=json.dumps(data, indent=4, separators=(',', ': '))

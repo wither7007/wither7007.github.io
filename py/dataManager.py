@@ -4,8 +4,8 @@ import re
 import json
 import itertools
 import sys
-outputFile="dataX"
-spreadTab="st"
+outputFile="data"
+spreadTab="json"
 def phone(number):
     pPhone=re.sub(r'(?<=^\+).*|^[^+].*', lambda m: re.sub(r'\D', '', m.group()), number)
     # print(pPhone)

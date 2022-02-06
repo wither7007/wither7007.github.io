@@ -3,6 +3,8 @@ import json
 import requests
 import clipboard
 import numpy as np
+outputFile="dataX"
+spreadTab="st"
 cats=[]
 cats6=[]
 catsCat=[] 
@@ -35,7 +37,7 @@ def unique(list1):
     # print list
     for x in unique_list:
         print(x) ,
-sheets='https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/json!A1:A50000?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw' 
+sheets=f"https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/{spreadTab}?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw" 
 r=requests.get(sheets)
 sheetsD=r.json()
 sheetsV=sheetsD['values']
