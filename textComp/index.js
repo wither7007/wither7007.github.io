@@ -69,7 +69,7 @@ When you're weary.  Feeling small.
             Eb     Ab      Eb
    When tears are in your eyes, I will dry them all.
 Ab      Db/Ab Ab  Eb      Ab           Eb           Ab  Eb  Ab
-   I'm on  your side ohhh when times get rough.
+   I'm on  your side when times get rough.
 Eb    Bb/D Cm   Bb                       Eb    Eb/D
    And friends just can't be found.
 Eb7/Db              Ab    F  Bb
@@ -81,7 +81,7 @@ When you're down and out.  When you're on the street.
            Eb           Ab                   Eb
    When eve - ning falls so hard. I will comfort you.
 Ab      Db/Ab Ab   Eb       Ab           Eb          Ab  Eb  Ab
-   I'll take your part ohhh when darkness comes.
+   I'll take your part when darkness comes.
 Eb      Bb/D Cm   Bb                      Eb    Eb/D
    And pain is all a - round.
 Eb7/Db         Ab  F   Bb
@@ -95,7 +95,7 @@ When you're down and out.  When you're on the street.
            Eb           Ab                   Eb
    When eve - ning falls so hard. I will comfort you.
 Ab      Db/Ab Ab   Eb       Ab           Eb          Ab  Eb  Ab
-   I'll take your part ohhh when darkness comes.
+   I'll take your part when darkness comes.
 Eb      Bb/D Cm   Bb                      Eb    Eb/D
    And pain is all a - round.
 Eb7/Db         Ab  F   Bb
