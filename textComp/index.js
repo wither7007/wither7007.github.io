@@ -121,7 +121,6 @@ songNumber = 1
 function load(songNumber) {
     alltext = []
     alltext.push(song)
-    debugger
     alltext.push(song1)
 
     alltext.push(song2)
