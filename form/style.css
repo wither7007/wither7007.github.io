@@ -68,3 +68,19 @@ ul {
     outline: 0;
     transition: background-color 2s ease-out;
 }
+
+@media (min-width: 700px ) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper > * {
+        padding: 2rem;
+    }
+
+.company-info h3, .company-info ul {
+    text-align: left;    
+    margin: 0 0 1rem 0;
+}
+}
