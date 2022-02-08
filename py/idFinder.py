@@ -4,9 +4,11 @@ import sys
 import re
 import clipboard
 from collections import Counter
-outputFile="data"
+#-----------------------------
+outputFile="ch"
+spreadTab="st"
+#-----------------------------
 
-spreadTab="json"
 def em(en):
     struct=""
     for index, item in enumerate(en):    
