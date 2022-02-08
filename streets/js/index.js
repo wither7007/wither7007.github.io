@@ -98,7 +98,7 @@ let serviceConvert = {
 let servicesMenu = {
   Essentials: {
     ch: "Hotlines/Emergency Phones",
-    cc: "Klothes Closet",
+    cc: "Clothes Closet",
     me: "Meals",
     fs: "Food Shelf",
     sh: "Shelter",
