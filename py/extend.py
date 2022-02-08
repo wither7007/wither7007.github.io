@@ -4,6 +4,12 @@ import json
 import requests
 import clipboard
 import numpy as np
+#****************
+outputFile="ch"
+spreadTab="st"
+extendFile="ch"
+
+#****************
 def uniqueN(list1):
     x = np.array(list1)
     print(np.unique(x))
@@ -23,7 +29,7 @@ filename="C:\projects\wither7007.github.io\streets\data.json"
 with open(filename) as f:
    data = json.load(f)
 print(data)
-filenameX="C:\projects\wither7007.github.io\streets\extend.json"
+filenameX=f"C:\projects\wither7007.github.io\streets\{extendFile}.json"
 with open(filenameX) as f:
    dataX = json.load(f)
 print(dataX)
