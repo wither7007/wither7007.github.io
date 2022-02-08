@@ -17,7 +17,7 @@ console.log("loaded script")
 document.getElementById('contactForm').addEventListener('submit', submitForm)
 
 function submitForm(e) {
-    e.preventDefault()
+    // e.preventDefault()
     // alert("this was submitted")
     myComment = document.getElementById("comment")
     // alert(myComment.value)
