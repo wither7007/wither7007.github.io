@@ -56,7 +56,7 @@ function showWeather(resp) {
 }
 let serviceConvert = {
   ch: "Crisis Hotline",
-  cc: "Xlothes Closet",
+  cc: "Clothes Closet",
   me: "Meals",
   fs: "Food Shelfs",
   sh: "Shelter",

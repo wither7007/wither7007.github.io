@@ -5,8 +5,8 @@ import json
 import itertools
 import sys
 #****************
-outputFile="ch"
-spreadTab="st"
+outputFile="data"
+spreadTab="json"
 
 #****************
 def phone(number):

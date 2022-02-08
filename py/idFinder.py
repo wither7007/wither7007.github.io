@@ -5,8 +5,8 @@ import re
 import clipboard
 from collections import Counter
 #-----------------------------
-outputFile="ch"
-spreadTab="st"
+outputFile="data"
+spreadTab="json"
 #-----------------------------
 
 def em(en):
