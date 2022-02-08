@@ -12,7 +12,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 // const app = initializeApp(firebaseConfig);
 var messagesRef = firebase.database().ref('messages')
-alert("new.js")
+
 console.log("loaded script")
 document.getElementById('contactForm').addEventListener('submit', submitForm)
 
