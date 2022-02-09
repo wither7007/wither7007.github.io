@@ -13,8 +13,10 @@ let places = []
 let pa = []
 function fetchWeather() {
   //use the values from latitude and longitude to fetch the weather
-  let lat = 42.98
-  let lon = -81.23
+  // let lat = 42.98
+  // let lon = -81.23
+  let lat = 45.01977340933548
+  let lon = -93.42030115198955
   let key = 'c1226a736dac2e52a2c456f0dc2c03ba';
   let lang = 'en';
   let units = 'imperial';
