@@ -22,7 +22,7 @@ axios.get(url)
 function ObjtoHtml(xy) {
   // xy.values.forEach(a => console.log(a[1]))
   // rValues = xy.values
-  // debugger
+  debugger
   xy.values.forEach((a, i) => {
     console.log(`a is ${a}`)
     html += `
