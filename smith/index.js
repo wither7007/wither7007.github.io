@@ -42,9 +42,9 @@ function ObjtoHtml(xy) {
         <b>Meals</b>
         <br>
           ${a[1]}
-          <br>
+          <br> <i class="fa-thin fa-block"></i><br>
          ${a[2]}
-         <br>
+                   <br>  <br>
          ${a[3]}
           <hr>
           <b>Trips</b>
