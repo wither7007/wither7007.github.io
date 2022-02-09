@@ -73,7 +73,7 @@ let serviceConvert = {
   st: "HIV & STD Testing & Treatment",
   mh: "Mental Health",
   cp: "Community Health",
-  aa: "Alcolhol and Chemcial Dependency",
+  aa: "Alcohol and Chemcial Dependency",
   de: "Dental",
   vt: "Veterans",
   ed: "Education",
@@ -126,7 +126,7 @@ let servicesMenu = {
     st: "HIV & STD Testing & Treatment",
     mh: "Mental Health",
     cp: "Community Health",
-    aa: "Alcolhol and Chemcial Dependency",
+    aa: "Alcohol and Chemcial Dependency",
     de: "Dental",
     vt: "Veterans"
   },
