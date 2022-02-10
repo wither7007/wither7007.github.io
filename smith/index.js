@@ -1,10 +1,13 @@
-var age = 26;
 var now = moment();
 let lat = 45.01977340933548
 let lon = -93.42030115198955
 let key = 'c1226a736dac2e52a2c456f0dc2c03ba';
-let Turl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units="imperial"&appid=${key}`
+let Turl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units='imperial'&appid=${key}`
+let TemUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units='imperial'&appid=${key}`
 var kelvin = 0
+// debugger
+// const requestOne = axios.get(TemUrl);
+const requestWeather = axios.get(Turl);
 function ktof(k) {
   var one = k - 273.5
   var two = one * (9 / 5)
