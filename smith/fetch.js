@@ -1,8 +1,8 @@
 // let TemUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units="imperial"&appid=${key}`
 let one = "https://api.storyblok.com/v1/cdn/stories/health?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt"
 
-const requestOne = axios.get(TemUrl);
-// const requestTwo = axios.get(url);
+const requestOne = axios.get(Turl);
+const requestTwo = axios.get(url);
 
 
 
