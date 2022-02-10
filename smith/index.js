@@ -1,11 +1,44 @@
 var age = 26;
-var beverage = (age >= 21) ? "Beer" : "Juice";
-console.log(beverage); // "Beer"
 var now = moment();
+let lat = 45.01977340933548
+let lon = -93.42030115198955
+let key = 'c1226a736dac2e52a2c456f0dc2c03ba';
+let Turl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units="imperial"&appid=${key}`
+var kelvin = 0
+function ktof(k) {
+  var one = k - 273.5
+  var two = one * (9 / 5)
+  var three = two + 32
+  return three
+}
+function temp() {
+  fetch(Turl)
+    .then(res => res.json())
+    .then(json => {
+      // console.log(json)
+      var kelvin = json.main.temp
+      // console.log(kelvin)
+      var far = Math.round(ktof(kelvin))
+
+      console.log(`far is in TURL ${far}`)
+      // console.log(`Farenheit is ${far} `)
+      return far
+    })
+  console.log(`kelvin is ${kelvin}`)
+}
 var html = ""
 // console.log("moment date", now.format('dddd MMMM Do'));
 // console.log(`${now.add('3', 'days')}`)
 // console.log(`Adding three days: ${now.format('ll')}`);
+
+async function getWeatherAsync() {
+  let response = await fetch(Turl);
+  let data = await response.json()
+  return data;
+}
+
+getWeatherAsync()
+  .then(data => me = data);
 
 const objArray = []
 var url = 'https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/menu?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw'
@@ -24,7 +57,7 @@ function ObjtoHtml(xy) {
   // xy.values.forEach(a => console.log(a[1]))
   // rValues = xy.values
   xy.values.forEach((a, i) => {
-    console.log(`a is ${a}`)
+    // console.log(`a is ${a}`)
     html += `
             <div class="accordion" id="accordionExample">
     <div class="accordion-item">
