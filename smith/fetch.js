@@ -1,16 +1,16 @@
 // let TemUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units="imperial"&appid=${key}`
 let one = "https://api.storyblok.com/v1/cdn/stories/health?version=published&token=wANpEQEsMYGOwLxwXQ76Ggtt"
 
-const requestOne = axios.get(Turl);
-const requestTwo = axios.get(url);
+const requestOnes = axios.get(Turl);
+const requestTwos = axios.get(Durl);
 
 
 
-axios.all([requestOne, requestTwo]).then(axios.spread((...responses) => {
-    const responseOne = responses[0].data
-    const responseTwo = responses[1].data
+axios.all([requestOnes, requestTwos]).then(axios.spread((...responses) => {
+    const responseOnes = responses[0].data
+    const responseTwos = responses[1].data
     // debugger
-    rText(responseOne, responseTwo)
+    rText(responseOnes, responseTwos)
     // console.log(responseOne.data)
     // console.log(responseTwo.data.values)
     me = (responseTwo.data.values)

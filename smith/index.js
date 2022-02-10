@@ -22,7 +22,6 @@ axios.all([requestOne, requestTwo, requestThree]).then(axios.spread((...response
 
 
 
-  debugger
   // rText(responseOne, responseTwo)
   ObjtoHtml(responseTwo, responseOne, responseThree)
   // console.log(responseOne.data)
@@ -49,18 +48,29 @@ var html = ""
 // console.log(`${now.add('3', 'days')}`)
 // console.log(`Adding three days: ${now.format('ll')}`);
 
+function timeConverter(UNIX_timestamp) {
+  var a = new Date(UNIX_timestamp * 1000);
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var year = a.getFullYear();
+  var month = months[a.getMonth()];
+  var date = a.getDate();
+  var hour = a.getHours();
+  var min = a.getMinutes();
+  var sec = a.getSeconds();
+  var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec;
+  return time;
+}
+console.log(timeConverter(0));
 
 
 const objArray = []
-// console.log(moment().add(1, 'weeks').format("dddd [the] Do YYYY "))
 
 function ObjtoHtml(xy, zz, yy) {
-  // xy.values.forEach(a => console.log(a[1]))
-  // rValues = xy.values
+  gg = yy.daily
+  gg.forEach(a => { console.log(ktof(a.temp.min), ktof(a.temp.max), timeConverter(a.dt)) })
   debugger
   xy.values.forEach((a, i) => {
     // console.log(`a is ${a}`)
-    debugger
     html += `
             <div class="accordion" id="accordionExample">
     <div class="accordion-item">
