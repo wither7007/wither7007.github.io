@@ -68,7 +68,6 @@ const objArray = []
 function ObjtoHtml(xy, zz, yy) {
   gg = yy.daily
   gg.forEach(a => { console.log(ktof(a.temp.min), ktof(a.temp.max), timeConverter(a.dt)) })
-  debugger
   xy.values.forEach((a, i) => {
     // console.log(`a is ${a}`)
     html += `
