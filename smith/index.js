@@ -1,18 +1,38 @@
 var now = moment();
 let lat = 45.01977340933548
 let lon = -93.42030115198955
-let key = 'c1226a736dac2e52a2c456f0dc2c03ba';
-let Turl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units='imperial'&appid=${key}`
-let TemUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units='imperial'&appid=${key}`
+let wKey = 'c1226a736dac2e52a2c456f0dc2c03ba';
+let sKey = 'AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw'
+let Turl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units='imperial'&appid=${wKey}`
+
+var url = `https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/menu?alt=json&key=${sKey}`
 var kelvin = 0
-// debugger
+const requestOne = axios.get(Turl);
+const requestTwo = axios.get(url);
+axios.all([requestOne, requestTwo]).then(axios.spread((...responses) => {
+  const responseOne = responses[0].data
+  const responseTwo = responses[1].data
+  // debugger
+  // rText(responseOne, responseTwo)
+  ObjtoHtml(responseTwo, responseOne)
+  // console.log(responseOne.data)
+  // console.log(responseTwo.data.values)
+  me = (responseTwo.data.values)
+
+
+  // use/access the results 
+})).catch(errors => {
+  // react on errors.
+})
+
+
 // const requestOne = axios.get(TemUrl);
 const requestWeather = axios.get(Turl);
 function ktof(k) {
   var one = k - 273.5
   var two = one * (9 / 5)
   var three = two + 32
-  return three
+  return Math.round(three)
 }
 function temp() {
   fetch(Turl)
@@ -44,7 +64,6 @@ getWeatherAsync()
   .then(data => me = data);
 
 const objArray = []
-var url = 'https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/menu?alt=json&key=AIzaSyCksSrPzSDpTmgJ-FaTT4_Xg6lHb9YtZJw'
 // console.log(moment().add(1, 'weeks').format("dddd [the] Do YYYY "))
 axios.get(url)
   .then(function (response) {
@@ -56,11 +75,12 @@ axios.get(url)
     console.log(xy);
   })
 
-function ObjtoHtml(xy) {
+function ObjtoHtml(xy, zz) {
   // xy.values.forEach(a => console.log(a[1]))
   // rValues = xy.values
   xy.values.forEach((a, i) => {
     // console.log(`a is ${a}`)
+    debugger
     html += `
             <div class="accordion" id="accordionExample">
     <div class="accordion-item">
@@ -68,6 +88,9 @@ function ObjtoHtml(xy) {
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${i}"
           aria-expanded="true" aria-controls="collapseOne">
           ${moment().add(i, 'days').format('dddd MMMM Do')}
+          <br>
+          
+         ${i == 0 ? "Temp: " + ktof(zz.main.temp) + "&deg" : ''}
         </button>
       </h2>
       <div id="collapse${i}" class="accordion-collapse collapse ${i == 0 ? 'show' : ''} 
