@@ -50,6 +50,7 @@ function showWeather(resp) {
                 </div>
               </div>
             </div>
+            <small class="yellow-text"> Test release </small>
           </div>`;
     }
   })
