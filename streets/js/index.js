@@ -228,7 +228,7 @@ for (let sc in serviceConvert) {
   // console.log(sc)
   let p = document.getElementsByClassName(sc)
   for (q of p) {
-    console.log(`q of p is ${q}`)
+    // console.log(`q of p is ${q}`)
     q.addEventListener("click", function () {
 
       // debugger
