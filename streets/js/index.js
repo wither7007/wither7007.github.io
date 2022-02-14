@@ -104,19 +104,21 @@ let servicesMenu = {
 
   "<b><u>Developer</u></b>": {
 
-    qq: "this is qq",
-    q1: "this is qq",
-    q2: "this is qq",
-    qq: "this is qq",
+
     yx: "<a href='https://www.wandinround.com/story.html/' target='_blank' >About</a>",
     yn: "<a href='https://www.wandinround.com/streets/form/' target='_blank' >Comments or Corrections</a>",
     yp: "<a href='https://www.wandinround.com/nohome/' target='_blank' >A Song</a>",
     lp: "<a href='https://donate.doctorswithoutborders.org/secure/donate' target='_blank' >Donate</a>",
     sk: "<a href='https://docs.google.com/spreadsheets/d/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/edit#gid=1580880162' target='_blank' >Data</a>",
-    q5: "this is qq",
-    q6: "this is qq"
   }
 }
+//   < span
+// class="pseudolink"
+// onclick = "location='https://jsfiddle.net/'" >
+//   Go TO URL
+// </span >
+
+
 // const services = require('./cat.js')
 //populate slide menu
 let html = ` <ul id="slide-out" class="sidenav">
