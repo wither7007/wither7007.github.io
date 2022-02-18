@@ -1,3 +1,15 @@
+const url = "https://sheets.googleapis.com/v4/spreadsheets/1v0WTX_g0SEHb-EfG9faV3ayFo1WZUmUj8Lhgc2Kw2cA/values/data?alt=json&key=AIzaSyCZ3y8Es42zvNGON7ezA6q4dxe8RNcyQIs"
+async function fetchEetJSON() {
+    const response = await fetch(url);
+    const eet = await response.json();
+    return eet;
+}
+// fetchEetJSON().then(movies => {
+//   movies; // fetched movies
+// });
+p = fetchEetJSON()
+p.then(resp => { console.log(resp.values) }
+)
 song = `
     Increase in cash
    debit
