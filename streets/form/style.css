@@ -31,6 +31,9 @@ ul {
 .company-info {
     background-color: #0ff;
 }
+h4 {
+    text-align: center;
+}
 .company-info h3, .company-info ul {
     text-align: center;    
     margin: 0 0 1rem 0;
