@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- annoying polyfile for js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/materialize.css"> -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@1.1.0-alpha/dist/css/materialize.min.css">
+    
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <link rel="icon" href="/assets/icons-512.abd95bd2.png">
+    <title>TC Streets</title> <!-- <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script> -->
+    <script src="./js/pr.js"></script>
+  <link rel="stylesheet" href="/assets/index.dc9335c3.css">
+</head>
+
+<body>
+    <span class="top">
+        <ul>
+            <li>
+                <div id="slide"></div>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i
+                        class="medium material-icons">menu</i></a>
+            </li>
+            <span id="topInfo">
+
+                <li>
+                    <div id="today">today</div>
+                </li>
+                <li>
+                    <div id="weather">weather is </div>
+                </li>
+            </span>
+            <li> </li>
+        </ul>
+    </span>
+    <div class=" containers">
+        <div class="wrapper">
+            <div id='first' class="box">
+                <span id="below"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAhvAAAIbwHMXsOcAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAThQTFRF////AP//AICAAKqqM8yZK6qqJLaSK7+VJ7GdJLaSIruZIL+fLbSWK7icKLyUJr+ZJ7qdJr2XJLabKbqYJLaYJLiaJ7ebJbqaJLiZJribJbmYJLqaKLebJ7iZJ7mbJrqYJriaJbmbJLqZKLuaJbiaJbqbJ7maJribJbiaJbmZJrqaJ7qZJ7iaJrmaJrqbJbmZJbiaJrmaJ7qaJrmaJrmZJbmaJrmZJrqaJrqbJ7qaJrmaJrmaJrmZJrmaJ7maJ7maJriZJrmaJrmaJrmaJrqaJ7mbJrmaJrqaJrqaJrmaJrmZJbmaJrmbJrmaJrmZJrmaJriaJrmaJrmaJrmaJrqZJrqaJrmaJriaJrmaJriaJrmaJrmbJrmaJrqaJrmZJrmaJbiaJriaJrmaJriZJrmaJrmaJrqbJrmaVqvdywAAAGd0Uk5TAAECAwUGBwwNDg8QERITFBobHCUqKy4wMj0+P0BBQkNERUZHU1lbXmhucnZ3eXqPkJKXoaOkqKmquMjJy8zMzc7P0NLS09TV1tfY2tvf4unr8PL09vb3+Pj5+fn6+vv7/Pz8/f3+/kF9/IgAAAETSURBVBgZfcGFVgJRFAXQo2KAiN3dhYqKndhY2N6hrHme//8DF86Qc3VvqFqm1+IJK3m3PwNF9eQJHz9ImsxsNTyqJm6ySeZYlx3wCu1k6Egt18Kr9TZLh1mAoj1h05FehKLr3qbjOQKF7/qLDvuqDopwkq5sDxRtQtfrBjRhoct0QxNj3hk0Ld90PUWgmbLokmlo5p/psjuhWcrS9VkDzSbz3qDaZoEPpeZWo78eWLAe/bUSRE5znLr0OByhC6GXSY8hL3QurGRSoyhqOhOWM6kRlAqeCkuZ1DDKBY+FRbY1hEqNR8I8Yw3CKxATOowMQhM4FOYYGYDOfyAkjfTjL/49oS19+FvD7vtLL/5Tv9WLCj+T5pMNBtXgKwAAAABJRU5ErkJggg==" alt=""> Click Below to Start</span>
+                <div id="collapse"></div>
+            </div>
+            <div id="second" class="box">
+                <div class="ok">
+                    <div id='print' class="button_cont"><a class="myButton" href="#">Print</a>
+                    </div>
+                </div>
+                <input onkeyup="filChar()" id="search" type="text" placeholder="Search">
+                <div id="cards" class="gridCard ">
+                    <!-- <div class="debug">This is grid card</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/materialize.min.js">
+    </script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/weather.js"></script> -->
+    <!-- <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script> -->
+</body>
+
+</html>
